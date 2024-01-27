@@ -5,7 +5,7 @@ keywords: SQL, SELECT
 description: SQL SELECT - SELECT Statement is used to fetch the data from a database table which returns this data in the form of a table.
 type: statement
 compatibility_key: select
-see_also_pages:
+see_also:
   - >
     [Foo](https://www.sqlhabit.com/mdn/foo)
   - >
