@@ -6,8 +6,10 @@ description: SQL SELECT - SELECT Statement is used to fetch the data from a data
 type: statement
 compatibility_key: select
 see_also_pages:
-  - https://www.sqlhabit.com/foo
-  - https://www.sqlhabit.com/bar
+  - >
+    [Foo](https://www.sqlhabit.com/mdn/foo)
+  - >
+    Also check out [Bar](https://www.sqlhabit.com/mdn/bar)
 ---
 
 # SELECT statement
