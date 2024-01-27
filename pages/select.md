@@ -1,38 +1,58 @@
 ---
-slug: <%= page_slug %>
-compatibility_key: <%= page_slug %>
-title: SQL %KEYWORD%
-keywords: SQL, %KEYWORD%
-description: SQL %KEYWORD% - %KEYWORD_DESCRIPTION%
-type: "%KEYWORD_TYPE%"
+slug: select
+title: SQL SELECT statement
+keywords: SQL, SELECT
+description: SQL SELECT - SELECT Statement is used to fetch the data from a database table which returns this data in the form of a table.
+type: statement
+compatibility_key: select
 see_also_pages:
-  - https://www.sqlhabit.com/mdn/foo
-  - https://www.sqlhabit.com/mdn/bar
+  - https://www.sqlhabit.com/foo
+  - https://www.sqlhabit.com/bar
 ---
 
-# SQL %KEYWORD%
+# SELECT statement
 
 ## Syntax
 
 ~~~pgsql
+SELECT *
+FROM users
 ~~~
 
 ## Description
 
-TODO
+Blah
 
 ## Try it
 
-### Example 1
+### Selecting all rows
 
 ~~~pgsql
-TODO
+SELECT *
+FROM users
 ~~~
 
-### Example 2
+### Selecting specific columns
 
 ~~~pgsql
-TODO
+SELECT
+  id,
+  email
+FROM users
+~~~
+
+### Using aggregate functions
+
+~~~pgsql
+SELECT
+  COUNT(*)
+FROM users
+~~~
+
+### Using window functions
+
+~~~pgsql
+...
 ~~~
 
 ## Database compatibility

@@ -12,10 +12,10 @@ if page_slug.nil?
   return
 end
 
-page_file_name = "#{page_slug}.md"
-compatibility_file_name = "#{page_slug}.yml"
+page_file_name = File.join(PAGES_FOLDER, "#{page_slug}.md")
+compatibility_file_name = File.join(COMPATIBILITY_FOLDER, "#{page_slug}.yml")
 
-if File.exists?(File.join(PAGES_FOLDER, page_file_name))
+if File.exists?(page_file_name) || File.exists?(compatibility_file_name)
   puts %{⚠️\s\sPage "#{page_slug}" already exists.}
   return
 end
