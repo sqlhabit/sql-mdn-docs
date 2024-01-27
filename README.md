@@ -1,9 +1,33 @@
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some#specifications
+# SQL Mastery, Discovery, Nuances (MDN) docs
 
-https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/some/index.md?plain=1
+## How to create a new page
 
-https://github.com/mdn/content/blob/main/files/en-us/mdn/writing_guidelines/page_structures/compatibility_tables/index.md
+### Step 1: clone the repo
 
-https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Array.json
+```bash
+git clone https://github.com/sqlhabit/sql-mdn-docs.git
+```
 
-https://blog.hubspot.com/website/sql-keywords-operators-statements
+### Step 2: run a CLI command to create page and compatibility files
+
+This step assumes you have [Ruby installed](https://www.ruby-lang.org/en/documentation/installation/).
+
+Let's say, we want to add a new page for the PostgreSQL `date_trunc` function. Here's the CLI command that creates the necessary files for your new page:
+
+```bash
+bin/new-page date_trunc
+```
+
+### Step 3: add page content
+
+The CLI `bin/new-page` command adds a new file: `pages/date_trunc.md`.
+
+Fill the YAML section (the top section between `---` symbols).
+
+### Step 4: add compatibility entry
+
+The CLI `bin/new-page` command also adds a compatibility file: `compatibiltiy/date_trunc.yml`.
+
+This is a [YAML](https://en.wikipedia.org/wiki/YAML) file that powers the "Database compatibility" section.
+
+Add correct versions for each database.
