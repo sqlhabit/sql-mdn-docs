@@ -1,0 +1,13 @@
+mysql:
+  min_version: 8.0
+  min_version_released_at: 2016-09-12
+postgresql:
+  min_version: 0
+sqlite:
+  min_version: 0
+redshift:
+  min_version: 0
+google_cloud:
+  min_version: 0
+snowflake:
+  min_version: 0

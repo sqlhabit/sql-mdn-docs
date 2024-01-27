@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require "fileutils"
+
+COMPATIBILITY_FOLDER = "compatibility"
+PAGES_FOLDER = "pages"
+
+page_slug = ARGV[0]
+
+if page_slug.nil?
+  puts %{⚠️\s\sPlease enter a page slug like "select" or "with_as".}
+  return
+end
+
+page_file_name = "#{page_slug}.md"
+compatibility_file_name = "#{page_slug}.yml"
+
+if File.exists?(File.join(PAGES_FOLDER, page_file_name))
+  puts %{⚠️\s\sPage "#{page_slug}" already exists.}
+  return
+end
+
+File.open(page_file_name, "w") do |file|
+  file.puts(File.read("templates/page.md"))
+end
+
+File.open(compatibility_file_name, "w") do |file|
+  file.puts(File.read("templates/compatibility.yml"))
+end

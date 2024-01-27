@@ -1,0 +1,11 @@
+mysql:
+  min_version: 0
+postgresql:
+  min_version: 0
+sqlite:
+redshift:
+  min_version: 0
+google_cloud:
+  min_version: 0
+snowflake:
+  min_version: 0
