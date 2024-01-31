@@ -1,5 +1,6 @@
 ---
 slug: with-as
+navbar_copy: WITH .. AS
 title: SQL WITH ... AS clause
 keywords: SQL, WITH, AS
 description: SQL WITH ... AS - WITH .. AS clause or Common Table Expression is used to define temporary queries (subqueries).

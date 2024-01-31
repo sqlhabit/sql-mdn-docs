@@ -1,5 +1,6 @@
 ---
 slug: date_trunc
+navbar_copy: date_trunc()
 compatibility_key: date_trunc
 title: SQL date_trunc function
 keywords: SQL, date_trunc
