@@ -5,12 +5,13 @@
 Atm all SQL functions are grouped via the following generic types (not the actual specific database types because there're too many):
 
 * numeric (we're mixing together actual `integer`, `float`, `numeric`, `bigint`, etc type)
-* `text`
+* text
 * date
 * timestamp
 * boolean
-* JSON
-* NULL
+* array
+* json
+* null
 
 ## How to create a new page
 
