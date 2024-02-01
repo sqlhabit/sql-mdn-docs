@@ -4,7 +4,7 @@ navbar_copy: extract()
 title: SQL EXTRACT function
 keywords: SQL, EXTRACT
 description: SQL EXTRACT - EXTRACT function is used to extract a part of date (year, month, day, etc) from a timestamp.
-type: function
+type: function.timestamp
 compatibility_key: extract
 see_also_pages:
   - https://www.sqlhabit.com/foo
