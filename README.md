@@ -1,5 +1,13 @@
 # SQL Mastery, Discovery, Nuances (MDN) docs
 
+## Page types
+
+* statement (SELECT, INSERT, etc)
+* clause (FROM, WHERE, etc)
+* operator (AND, OR, NOT, =, >, <, etc)
+* function (split_part, etc)
+* keyword (AS, DISTINCT, THEN, END, etc)
+
 ## Data types
 
 Atm all SQL functions are grouped via the following generic types (not the actual specific database types because there're too many):

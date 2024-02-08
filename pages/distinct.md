@@ -2,10 +2,10 @@
 slug: distinct
 navbar_copy: DISTINCT
 compatibility_key: distinct
-title: SQL DISTINCT statement
+title: SQL DISTINCT keyword
 keywords: SQL, DISTINCT
 description: SQL DISTINCT - DISTINCT tells SQL engine to present only unique records in the result set.
-type: statement
+type: keyword
 see_also_pages:
   - https://www.sqlhabit.com/mdn/foo
   - https://www.sqlhabit.com/mdn/bar
