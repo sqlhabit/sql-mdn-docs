@@ -1,5 +1,6 @@
 ---
 slug: and
+navbar_copy: AND
 compatibility_key: and
 title: SQL AND operator
 keywords: SQL, AND
