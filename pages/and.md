@@ -11,7 +11,7 @@ see_also_pages:
   - https://www.sqlhabit.com/mdn/bar
 ---
 
-# SQL %KEYWORD%
+# SQL AND
 
 ## Syntax
 
