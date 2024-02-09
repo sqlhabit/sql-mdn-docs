@@ -1,5 +1,6 @@
 ---
 slug: distinct
+published_at:
 navbar_copy: DISTINCT
 compatibility_key: distinct
 title: SQL DISTINCT keyword

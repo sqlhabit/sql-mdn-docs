@@ -1,5 +1,6 @@
 ---
 slug: extract
+published_at:
 navbar_copy: extract()
 title: SQL EXTRACT function
 keywords: SQL, EXTRACT

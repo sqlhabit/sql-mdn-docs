@@ -1,5 +1,6 @@
 ---
 slug: select
+published_at: 2024-02-09 21:53
 navbar_copy: SELECT
 title: SQL SELECT statement
 keywords: SQL, SELECT

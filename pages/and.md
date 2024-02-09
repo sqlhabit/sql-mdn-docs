@@ -1,5 +1,6 @@
 ---
 slug: and
+published_at:
 navbar_copy: AND
 compatibility_key: and
 title: SQL AND operator

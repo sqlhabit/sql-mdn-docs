@@ -1,5 +1,6 @@
 ---
 slug: with-as
+published_at:
 navbar_copy: WITH .. AS
 title: SQL WITH ... AS clause
 keywords: SQL, WITH, AS
