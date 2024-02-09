@@ -1,7 +1,7 @@
 ---
 slug: and
 published_at:
-navbar_copy: AND
+navbar: AND
 compatibility_key: and
 title: SQL AND operator
 keywords: SQL, AND

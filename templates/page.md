@@ -1,7 +1,7 @@
 ---
 slug: <%= page_slug %>
 published_at:
-navbar_copy: <%= page_slug %>
+navbar: <%= page_slug %>
 compatibility_key: <%= page_slug %>
 title: SQL %KEYWORD%
 keywords: SQL, %KEYWORD%

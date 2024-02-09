@@ -1,7 +1,7 @@
 ---
 slug: select
 published_at: 2024-02-09 21:53
-navbar_copy: SELECT
+navbar: SELECT
 title: SQL SELECT statement
 keywords: SQL, SELECT
 description: SQL SELECT - SELECT Statement is used to fetch the data from a database table which returns this data in the form of a table.
