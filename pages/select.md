@@ -17,7 +17,7 @@ The result of a `SELECT` query is called a **result set** (basically a new table
 
 ## Syntax
 
-Inside a SELECT statement, you can specify which columns you want to have in your result set.
+Inside a `SELECT` statement, you can specify which columns you want to have in your result set.
 
 You can use a wildcard symbol `*` to select all available columns from a table.
 
