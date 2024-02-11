@@ -55,17 +55,11 @@ Add correct versions for each database.
 
 ## Page features
 
-### Disable "Run" link for a query
+### Example queries
 
-SQL Habit allows only `SELECT` queries (otherwise people will modify datasets), so we have to disable non-SELECT queries. You can do it by adding the `.js-no-run-query-link` class to a query in Markdown:
+When creating a new page, make sure to provide an example (otherwise it's not really MDN – Mastery, Discovery & Nuances). When a new page is published, all its queries are runnable by default inside [the Bindle database](https://sqlhabit.github.io/sql_schema_visualizer/).
 
-```markdown
-~~~pgsql
-UPDATE users
-SET country = 'au'
-~~~
-{: .js-no-run-query-link}
-```
+In the next paragraphs you'll learn how to specify a different dataset or disable the "Run" button for a query.
 
 ### Specify query dataset
 
@@ -89,4 +83,16 @@ SELECT *
 FROM transactions
 ~~~
 {: data-dataset-id="3"}
+```
+
+### Disable "Run" link for a query
+
+SQL Habit allows only `SELECT` queries (otherwise people will modify datasets), so we have to disable non-SELECT queries. You can do it by adding the `.js-no-run-query-link` class to a query in Markdown:
+
+```markdown
+~~~pgsql
+UPDATE users
+SET country = 'au'
+~~~
+{: .js-no-run-query-link}
 ```
