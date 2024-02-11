@@ -59,10 +59,10 @@ Add correct versions for each database.
 
 SQL Habit allows only `SELECT` queries (otherwise people will modify datasets), so we have to disable non-SELECT queries. You can do it by adding the `.js-no-run-query-link` class to a query in Markdown:
 
-~~~markdown
-\~~~pgsql
+```markdown
+~~~pgsql
 UPDATE users
 SET country = 'au'
-\~~~
-{: .js-no-run-query-link}
 ~~~
+{: .js-no-run-query-link}
+```
