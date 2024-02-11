@@ -52,3 +52,17 @@ The CLI `bin/new-page` command also adds a compatibility file: `compatibiltiy/da
 This is a [YAML](https://en.wikipedia.org/wiki/YAML) file that powers the "Database compatibility" section.
 
 Add correct versions for each database.
+
+## Page features
+
+### Disable "Run" link for a query
+
+SQL Habit allows only `SELECT` queries (otherwise people will modify datasets), so we have to disable non-SELECT queries. You can do it by adding the `.js-no-run-query-link` class to a query in Markdown:
+
+~~~markdown
+~~~pgsql
+UPDATE users
+SET country = 'au'
+~~~
+{: .js-no-run-query-link}
+~~~
