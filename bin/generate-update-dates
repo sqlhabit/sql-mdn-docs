@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require "fileutils"
+require "date"
+
+UPDATE_DATES_FOLDER = "updated_at"
+PAGES_FOLDER = "pages"
+
+unless Dir.exist?(UPDATE_DATES_FOLDER)
+  Dir.mkdir(UPDATE_DATES_FOLDER)
+end
+
+Dir[File.join(PAGES_FOLDER, "*.md")].each do |page_file|
+  slug = File.basename(page_file).gsub(".md", "")
+
+  result = `git log --format=%cs pages/#{slug}.md`
+
+  updated_at = Date.parse(result.lines.first.strip)
+
+  File.open(File.join(UPDATE_DATES_FOLDER, slug), "w") do |f|
+    f.puts(updated_at)
+  end
+end

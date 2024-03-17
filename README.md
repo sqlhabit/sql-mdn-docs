@@ -21,6 +21,10 @@ Atm all SQL functions are grouped via the following generic types (not the actua
 * json
 * null
 
+## Page updated_at date
+
+Run `bin/generate-update-dates` to generate update dates for each page.
+
 ## How to create a new page
 
 ### Step 1: clone the repo
