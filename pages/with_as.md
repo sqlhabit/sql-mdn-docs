@@ -1,65 +1,97 @@
 ---
-slug: with-as
-published_at:
+published_at: 2024-03-19 20:30
 name: WITH .. AS
-title: SQL WITH ... AS clause
-keywords: SQL, WITH, AS
-description: SQL WITH ... AS - WITH .. AS clause or Common Table Expression is used to define temporary queries (subqueries).
 type: clause
-see_also_pages:
-  - https://www.sqlhabit.com/foo
-  - https://www.sqlhabit.com/bar
+compatibility_key: with-as
+slug: with-as
+title: SQL WITH ... AS clause
+keywords: SQL, WITH AS
+description: SQL WITH .. AS clause or Common Table Expression is used to define temporary queries (subqueries).
 ---
 
-# SELECT statement
+# WITH AS Clause
+
+The `WITH..AS` clause in SQL, often referred to as the Common Table Expression (CTE), is a temporary result set which you can reference within a `SELECT` statement.
+
+CTEs can make your queries more readable and modular, allowing for better readability, easier debugging or performance optimization.
 
 ## Syntax
 
-~~~pgsql
-SELECT *
-FROM users
-~~~
-
-## Description
-
-Blah
-
-## Try it
-
-### Selecting all rows
+The `WITH..AS` clause allows you to define a CTE as follows:
 
 ~~~pgsql
+WITH cte_name AS (
+  SELECT column1, column2
+  FROM existing_table
+  WHERE
+    filters
+)
 SELECT *
-FROM users
+FROM cte_name
 ~~~
+{: .js-no-run-query-link}
 
-### Selecting specific columns
+:mag: You can read it as:
+
+* Step 1. We define a virtual `cte_name` table.
+* Step 2. We're querying the virtual `cte_name` table as if it was a real table in our database.
+
+## Simplifying Complex Queries
+
+CTEs can be particularly useful in simplifying complex SQL queries by breaking them down into smaller, more manageable pieces.
+
+For instance, if you're working with nested `SELECT` statements, using a CTE can make your query more readable.
+
+### :red_circle: BAD
+
+Look how heavy and unreadable a nested query looks like:
 
 ~~~pgsql
 SELECT
-  id,
-  email
-FROM users
+  email, age
+FROM (
+  SELECT *
+  FROM users
+  WHERE
+    status = 'customer'
+) AS customers
 ~~~
 
-### Using aggregate functions
+### :green_circle: GOOD
+
+A CTE, on the other hand, allows us to read the same query top-to-bottom and follow the author's idea of data analysis:
 
 ~~~pgsql
+WITH customers AS (
+  SELECT *
+  FROM users
+  WHERE
+    status = 'customer'
+)
+
 SELECT
-  COUNT(*)
+  email, age
+FROM customers
+~~~
+
+## Using `WITH..AS` for Data Preparation
+
+The `WITH..AS` clause is a perfect tool for data preparation.
+
+Such preparation steps might include:
+
+* **Data Cleaning**. I bet you've already heard a phrase ":hankey: IN – :hankey: OUT". If we have duplicated, incomplete or broken records before our data analysis, chances are they might ruin the result.
+* **Transformations**. For example, we might not be interested in specific user ages, but in age groups – 16-21, 22-30, 31-40, etc. We can use CTE to add a new `age_group` column to the existing `users` table.
+
+:mortar_board: Try adding a CTE to the following query to calculate age groups:
+
+~~~pgsql
+SELECT age
 FROM users
 ~~~
 
-### Using window functions
-
-~~~pgsql
-...
-~~~
-
-## Database compatibility
+Here'e a free SQL Habit lesson that might help: [If/else logic via CASE statement](/content/lessons/if-else-logic-via-case-statement).
 
 {{compatibility}}
-
-## See also
 
 {{see_also}}
