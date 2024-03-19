@@ -65,10 +65,6 @@ SELECT COUNT(DISTINCT country)
 FROM users
 ~~~
 
-## Database compatibility
-
 {{compatibility}}
-
-## See also
 
 {{see_also}}
