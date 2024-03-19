@@ -9,7 +9,7 @@ keywords: SQL, WITH AS
 description: SQL WITH .. AS clause or Common Table Expression is used to define temporary queries (subqueries).
 ---
 
-# WITH AS Clause
+# WITH AS clause in SQL
 
 The `WITH..AS` clause in SQL, often referred to as the Common Table Expression (CTE), is a temporary result set which you can reference within a `SELECT` statement.
 
