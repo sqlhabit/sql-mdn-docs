@@ -7,6 +7,8 @@ slug: with-as
 title: SQL WITH ... AS clause
 keywords: SQL, WITH AS
 description: SQL WITH .. AS clause or Common Table Expression is used to define temporary queries (subqueries).
+see_also_pages:
+  - https://www.sqlhabit.com/mdn/common-table-expressions-in-mysql
 ---
 
 # WITH AS clause in SQL

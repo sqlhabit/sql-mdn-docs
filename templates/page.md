@@ -37,10 +37,6 @@ TODO
 TODO
 ~~~
 
-## Database compatibility
-
 {{compatibility}}
-
-## See also
 
 {{see_also}}
