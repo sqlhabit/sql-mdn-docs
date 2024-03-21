@@ -9,7 +9,8 @@ description: What to use instead of CTE-s in MySQL
 type: misc
 compatibility: false
 see_also_pages:
-  - https://www.sqlhabit.com/mdn/with-as
+  - name: WITH..AS clause in SQL
+    url: https://www.sqlhabit.com/mdn/with-as
 ---
 
 # Common Table Expressions (CTEs) in MySQL
