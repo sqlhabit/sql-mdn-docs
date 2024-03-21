@@ -15,8 +15,6 @@ see_also_pages:
 
 # Common Table Expressions (CTEs) in MySQL
 
-# Understanding Common Table Expressions (CTEs) in MySQL
-
 Common Table Expressions, or CTEs, have revolutionized the way we can query databases, offering a more readable and maintainable approach to constructing complex SQL queries.
 
 [MySQL](https://en.wikipedia.org/wiki/MySQL) introduced support for CTEs starting from version 8.0, marking a significant enhancement in its SQL querying capabilities. Version 8.0 was released on September, 2016.
