@@ -1,9 +1,23 @@
 #!/usr/bin/env ruby
 
+require "erb"
 require "fileutils"
 
 COMPATIBILITY_FOLDER = "compatibility"
 PAGES_FOLDER = "pages"
+
+def render_template(file_path, params)
+  template_content = File.read(file_path)
+
+  erb_template = ERB.new(template_content)
+
+  context_binding = binding
+  params.each do |key, value|
+    context_binding.local_variable_set(key, value)
+  end
+
+  erb_template.result(context_binding)
+end
 
 page_slug = ARGV[0]
 
@@ -21,7 +35,9 @@ if File.exists?(page_file_name) || File.exists?(compatibility_file_name)
 end
 
 File.open(page_file_name, "w") do |file|
-  file.puts(File.read("templates/page.md"))
+  file.puts(render_template("templates/page.md", {
+    page_slug: page_slug
+  }))
 end
 
 File.open(compatibility_file_name, "w") do |file|
