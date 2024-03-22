@@ -2,8 +2,8 @@ mysql:
   min_version: 8.0
   min_version_released_at: 2016-09-12
   related_pages:
-    - name: WITH..AS clause in SQL
-      url: https://www.sqlhabit.com/mdn/with-as
+    - name: Common Table Expressions (CTEs) in MySQL
+      url: https://www.sqlhabit.com/mdn/common-table-expressions-in-mysql
 postgresql:
   min_version: 0
 sqlite:
