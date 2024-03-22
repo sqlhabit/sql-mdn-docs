@@ -1,4 +1,4 @@
 PreCommit:
   GenerateUpdatedAtDates:
     enabled: true
-    command: ['bin/generate-update-dates']
+    command: ['bin/generate-update-dates', '&&', 'git add updated_at/*']
