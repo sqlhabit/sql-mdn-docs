@@ -1,0 +1,4 @@
+PreCommit:
+  GenerateUpdatedAtDates:
+    enabled: true
+    command: ['bin/generate-update-dates']
