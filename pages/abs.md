@@ -39,7 +39,7 @@ The `abs()` function can also be useful in filtering records based on the absolu
 SELECT *
 FROM transactions
 WHERE
-  abs(balance_changes) > 100
+  abs(amount_usd) > 100
 ~~~
 {: data-dataset-id="3"}
 
