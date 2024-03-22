@@ -21,3 +21,7 @@ Dir[File.join(PAGES_FOLDER, "*.md")].each do |page_file|
     f.puts(updated_at)
   end
 end
+
+system "git add updated_at/*"
+
+system "git commit -m 'Generated updated_at dates'"

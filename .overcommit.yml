@@ -1,4 +1,4 @@
 PostCommit:
   GenerateUpdatedAtDates:
     enabled: true
-    command: ['bin/generate-update-dates && git add updated_at/* && git commit -m "Generated updated_at dates"']
+    command: ['bin/generate-update-dates']
