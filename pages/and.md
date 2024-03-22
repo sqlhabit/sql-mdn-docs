@@ -1,12 +1,12 @@
 ---
-slug: and
 published_at:
-name: AND
+slug: and
 compatibility_key: and
-title: SQL AND operator
-keywords: SQL, AND
-description: SQL AND is a logical operator used to combine multiple conditions, typically used inside a WHERE clause.
 type: operator
+name: AND
+title: SQL AND operator
+description: SQL AND is a logical operator used to combine multiple conditions, typically used inside a WHERE clause.
+keywords: SQL, AND
 see_also_pages:
   - https://www.sqlhabit.com/mdn/foo
   - https://www.sqlhabit.com/mdn/bar

@@ -1,12 +1,12 @@
 ---
-slug: common-table-expressions-in-mysql
 published_at: 2024-03-21 21:30
-name: Common Table Expressions (CTEs) in MySQL
+slug: common-table-expressions-in-mysql
 compatibility_key: mysql-cte-workaround
-title: Common Table Expressions (CTEs) in MySQL
-keywords: SQL, MySQL, CTE, Common Table Expressions
-description: What to use instead of CTE-s in MySQL
 type: misc
+name: Common Table Expressions (CTEs) in MySQL
+title: Common Table Expressions (CTEs) in MySQL
+description: What to use instead of CTE-s in MySQL
+keywords: SQL, MySQL, CTE, Common Table Expressions
 compatibility: false
 see_also_pages:
   - name: WITH..AS clause in SQL

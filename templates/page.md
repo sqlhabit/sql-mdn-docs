@@ -1,12 +1,13 @@
 ---
-slug: <%= page_slug %>
 published_at:
-name: <%= page_slug %>
+slug: <%= page_slug %>
 compatibility_key: <%= page_slug %>
-title: SQL %KEYWORD%
-keywords: SQL, %KEYWORD%
-description: SQL %KEYWORD% - %KEYWORD_DESCRIPTION%
 type: "%KEYWORD_TYPE%"
+name: <%= page_slug %>
+title: SQL %KEYWORD%
+description: SQL %KEYWORD% - %KEYWORD_DESCRIPTION%
+keywords: SQL, %KEYWORD%
+compatibility: true
 see_also_pages:
   - https://www.sqlhabit.com/mdn/foo
   - https://www.sqlhabit.com/mdn/bar

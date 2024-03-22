@@ -1,12 +1,12 @@
 ---
 published_at: 2024-02-09 21:53
-name: SELECT
-type: statement
-compatibility_key: select
 slug: select
+compatibility_key: select
+type: statement
+name: SELECT
 title: SQL SELECT statement
-keywords: SQL, SELECT
 description: SQL SELECT - SELECT statement is used to fetch the data from a database table. SELECT statement returns a table that's also called a result set.
+keywords: SQL, SELECT
 ---
 
 # SELECT statement in SQL

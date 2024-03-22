@@ -1,12 +1,12 @@
 ---
 published_at: 2024-03-19 20:30
-name: WITH .. AS
-type: clause
-compatibility_key: with-as
 slug: with-as
+compatibility_key: with-as
+type: clause
+name: WITH .. AS
 title: SQL WITH ... AS clause
-keywords: SQL, WITH AS
 description: SQL WITH .. AS clause or Common Table Expression is used to define temporary queries (subqueries).
+keywords: SQL, WITH AS
 see_also_pages:
   - name: Common Table Expressions (CTEs) in MySQL
     url: https://www.sqlhabit.com/mdn/common-table-expressions-in-mysql
