@@ -10,7 +10,7 @@ keywords: SQL, MySQL, CTE, Common Table Expressions
 compatibility: false
 see_also_pages:
   - name: WITH..AS clause in SQL
-    url: https://www.sqlhabit.com/mdn/with-as
+    url: /mdn/with-as
 ---
 
 # Common Table Expressions (CTEs) in MySQL

@@ -9,7 +9,7 @@ description: SQL WITH .. AS clause or Common Table Expression is used to define 
 keywords: SQL, WITH AS
 see_also_pages:
   - name: Common Table Expressions (CTEs) in MySQL
-    url: https://www.sqlhabit.com/mdn/common-table-expressions-in-mysql
+    url: /mdn/common-table-expressions-in-mysql
 ---
 
 # WITH AS clause in SQL

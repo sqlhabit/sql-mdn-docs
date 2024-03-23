@@ -9,8 +9,8 @@ description: SQL %KEYWORD% - %KEYWORD_DESCRIPTION%
 keywords: SQL, %KEYWORD%
 compatibility: true
 see_also_pages:
-  - https://www.sqlhabit.com/mdn/foo
-  - https://www.sqlhabit.com/mdn/bar
+  - /mdn/foo
+  - /mdn/bar
 ---
 
 # SQL %KEYWORD%
