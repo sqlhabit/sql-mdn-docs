@@ -16,7 +16,7 @@ see_also_pages:
 
 The `AND` operator in SQL is a logical operator that allows you to combine two or more conditions.
 
-The `AND` operator in SQL, as well as in many programming languages, originates from [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra), a branch of mathematics concerned with operations on logical values. In boolean algebra, an `AND` operation takes two boolean inputs (true/false) and returns true only if both inputs are true. This concept is directly applicable in SQL where `AND` is used to test whether multiple conditions are true simultaneously.
+The `AND` operator in SQL, as well as in many programming languages, originates from [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra), a branch of mathematics concerned with operations on logical values. In boolean algebra, an `AND` operator takes two boolean inputs (true/false) and returns true only if both inputs are true. This concept is directly applicable in SQL where `AND` is used to test whether multiple conditions are true simultaneously.
 
 ## AND application in SQL
 
@@ -30,11 +30,11 @@ Here's the truth table (a tool that shows any operotor's output for all possible
 | FALSE | FALSE | FALSE   |
 {: .table-with-header }
 
-This table shows that the `AND` operation returns true only when both A and B are true, mirroring its use in SQL where a row must satisfy all conditions connected by `AND` to be included in the result set.
+This table shows that the `AND` operator returns true only when both A and B are true, mirroring its use in SQL where a row must satisfy all conditions connected by `AND` to be included in the result set.
 
 Thus, the `AND` operator in SQL is a direct application of mathematical principles from boolean algebra, enabling precise filtering of data based on multiple criteria.
 
-When using the `AND` operator, all conditions must be true for the rows to be included in the result set. It is crucial for filtering data based on multiple criteria, making your queries more specific and targeted.
+:bulb: When using the `AND` operator, all conditions must be true for the rows to be included in the result set. It is crucial for filtering data based on multiple criteria, making your queries more specific and targeted.
 
 ## AND in WHERE clause
 

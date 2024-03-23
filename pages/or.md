@@ -7,13 +7,12 @@ name: OR
 title: OR operator in SQL
 description: OR is a logical operator in SQL that is used to combine multiple conditions, typically used inside a WHERE clause.
 keywords: SQL, OR, boolean, condition
-compatibility: true
 see_also_pages:
   - name: AND operator in SQL
     url: /mdn/and
 ---
 
-# OR Operator in SQL
+# OR operator in SQL
 
 The `OR` operator in SQL is used to combine multiple conditions in a `WHERE` clause, but unlike [the `AND` operator](/mdn/and), it only requires one of the conditions to be true for a row to be included in the result set. This makes the `OR` operator particularly useful for filtering data based on alternative criteria, allowing for more flexible and inclusive queries.
 
@@ -23,13 +22,19 @@ The `OR` operator comes from a math area called [Boolean algebra](https://en.wik
 
 The truth table (a tool used in boolean algebra to show operotor's output for all possible inputs) for the `OR` operator looks like this:
 
-| A     | B     | A OR B |
+| A     | B     | A OR B  |
 |-------|-------|---------|
 | TRUE  | TRUE  | TRUE    |
 | TRUE  | FALSE | TRUE    |
 | FALSE | TRUE  | TRUE    |
 | FALSE | FALSE | FALSE   |
 {: .table-with-header }
+
+This table shows that the `OR` operator returns true when any value of A or B is true, mirroring its use in SQL where a row must satisfy at least one condition connected by the `OR` operator to be included in the result set.
+
+Thus, the `OR` operator in SQL is a direct application of mathematical principles from boolean algebra, enabling flexible filtering of data based on multiple criteria.
+
+:bulb: When using the `OR` operator, at least one condition must be true for the rows to be included in the result set. It helps greatly with filtering data based on multiple criteria.
 
 ## OR in WHERE clause
 
