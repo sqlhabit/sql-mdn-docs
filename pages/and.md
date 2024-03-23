@@ -10,6 +10,8 @@ keywords: SQL, AND, boolean, condition
 see_also_pages:
   - name: OR operator in SQL
     url: /mdn/or
+  - name: CASE operator in SQL
+    url: /mdn/case
 ---
 
 # AND Operator in SQL
