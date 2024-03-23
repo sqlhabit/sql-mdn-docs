@@ -7,17 +7,19 @@ name: AND
 title: AND operator in SQL
 description: AND is a logical operator in SQL that is used to combine multiple conditions, typically used inside a WHERE clause.
 keywords: SQL, AND, boolean, condition
+see_also_pages:
+  - https://www.sqlhabit.com/mdn/or
 ---
 
 # AND Operator in SQL
 
 The `AND` operator in SQL is a logical operator that allows you to combine two or more conditions.
 
-The `AND` operator in SQL, as well as in many programming languages, originates from boolean algebra, a branch of mathematics concerned with operations on logical values. In boolean algebra, an `AND` operation takes two boolean inputs (true/false) and returns true only if both inputs are true. This concept is directly applicable in SQL where `AND` is used to test whether multiple conditions are true simultaneously.
+The `AND` operator in SQL, as well as in many programming languages, originates from [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra), a branch of mathematics concerned with operations on logical values. In boolean algebra, an `AND` operation takes two boolean inputs (true/false) and returns true only if both inputs are true. This concept is directly applicable in SQL where `AND` is used to test whether multiple conditions are true simultaneously.
 
 ## AND application in SQL
 
-The truth table (a tool that shows any operotor's output for all possible input combinations) for the `AND` operation is as follows:
+Here's the truth table (a tool that shows any operotor's output for all possible input combinations) for the `AND` operator:
 
 | A     | B     | A AND B |
 |-------|-------|---------|
@@ -71,7 +73,7 @@ INNER JOIN purchases p
     AND p.refunded = FALSE
 ~~~
 
-## Tips for Using AND in SQL
+## Tips for using AND in SQL
 
 * Remember that all conditions connected by `AND` must be true for a row to be included in the result set.
 * Use parentheses `()` to group conditions and control the precedence of evaluation, especially when combining `AND` with `OR` operators.
