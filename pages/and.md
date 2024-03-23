@@ -25,6 +25,7 @@ The truth table (a tool that shows any operotor's output for all possible input 
 | TRUE  | FALSE | FALSE   |
 | FALSE | TRUE  | FALSE   |
 | FALSE | FALSE | FALSE   |
+{: .table-with-header }
 
 This table shows that the `AND` operation returns true only when both A and B are true, mirroring its use in SQL where a row must satisfy all conditions connected by `AND` to be included in the result set.
 

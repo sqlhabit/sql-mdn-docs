@@ -32,7 +32,7 @@ WITH cte_name AS (
 SELECT *
 FROM cte_name
 ~~~
-{: .js-no-run-query-link}
+{: .js-no-run-query-link }
 
 :mag: You can read it as:
 
