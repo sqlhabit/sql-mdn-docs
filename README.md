@@ -7,6 +7,7 @@
 * operator (AND, OR, NOT, =, >, <, etc)
 * function (split_part, etc)
 * keyword (AS, DISTINCT, THEN, END, etc)
+* misc (articles on how to bridge gaps betweens databases, etc)
 
 ## Data types
 
@@ -20,10 +21,6 @@ Atm all SQL functions are grouped via the following generic types (not the actua
 * array
 * json
 * null
-
-## Page updated_at date
-
-Run `bin/generate-update-dates` to generate update dates for each page.
 
 ## How to create a new page
 
@@ -99,4 +96,18 @@ UPDATE users
 SET country = 'au'
 ~~~
 {: .js-no-run-query-link}
+```
+
+### Adding a table
+
+If you're adding a table, please add the `table-with-header` class. CSS class helps to avoid CSS collisions with other tables on the page (DB compatibility table, etc):
+
+```markdown
+| A     | B     | A OR B  |
+|-------|-------|---------|
+| TRUE  | TRUE  | TRUE    |
+| TRUE  | FALSE | TRUE    |
+| FALSE | TRUE  | TRUE    |
+| FALSE | FALSE | FALSE   |
+{: .table-with-header }
 ```
