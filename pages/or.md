@@ -9,7 +9,8 @@ description: OR is a logical operator in SQL that is used to combine multiple co
 keywords: SQL, OR, boolean, condition
 compatibility: true
 see_also_pages:
-  - /mdn/and
+  - name: AND operator in SQL
+    url: /mdn/and
 ---
 
 # OR Operator in SQL

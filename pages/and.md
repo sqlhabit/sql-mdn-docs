@@ -8,7 +8,8 @@ title: AND operator in SQL
 description: AND is a logical operator in SQL that is used to combine multiple conditions, typically used inside a WHERE clause.
 keywords: SQL, AND, boolean, condition
 see_also_pages:
-  - /mdn/or
+  - name: OR operator in SQL
+    url: /mdn/or
 ---
 
 # AND Operator in SQL
