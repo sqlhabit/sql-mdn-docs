@@ -8,6 +8,8 @@ SQL MDN Docs was created to help people who already know or study one SQL flavor
 
 Finally, let's simply build the best SQL documentation in the world a-la [MDN Web Docs for JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
+__TOC__
+
 ## Project structure
 
 The main entry point is the [pages folder](https://github.com/sqlhabit/sql-mdn-docs/tree/main/pages) – it contains Markdown files for all pages shown on https://www.sqlhabit.com/mdn.
