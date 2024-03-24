@@ -45,7 +45,7 @@ In every page file you'll see these 2 sections:
 
 They're replaced with a proper HTML components during the Markdown compilation step:
 
-![DB Compatibility and See also sections](https://raw.githubusercontent.com/makaroni4/habit-tracker/main/.README/db_compat_and_see_also.png).
+![DB Compatibility and See also sections](https://github.com/sqlhabit/sql-mdn-docs/blob/main/.README/db_compat_and_see_also.png?raw=true).
 
 Database compatibility data is stored in a separate YAML file in the [compatibility](https://github.com/sqlhabit/sql-mdn-docs/tree/main/compatibility) folder.
 
