@@ -2,11 +2,11 @@
 
 # SQL Mastery, Discovery, Nuances (MDN) docs
 
-![CC BY-NC-SA 4.0 license](https://img.shields.io/github/license/sqlhabit/sql_mdn_docs?color=%2347A3F3)
+![CC BY-NC-SA 4.0 license](https://img.shields.io/github/license/sqlhabit/sql-mdn-docs?color=%2347A3F3)
 
 This repo hosts all the content behind https://www.sqlhabit.com/mdn.
 
-[:microscope: How it works](https://github.com/sqlhabit/sql_mdn_docs#how-it-works) | [:mag: How to add a page](https://github.com/sqlhabit/sql_mdn_docs#how-to-creaet-a-new-page) |  [:handshake: Contributing](https://github.com/sqlhabit/sql_mdn_docs#contributing)
+[:microscope: How it works](https://github.com/sqlhabit/sql-mdn-docs#how-it-works) | [:mag: How to add a page](https://github.com/sqlhabit/sql-mdn-docs#how-to-creaet-a-new-page) |  [:handshake: Contributing](https://github.com/sqlhabit/sql-mdn-docs#contributing)
 
 </div>
 
@@ -204,7 +204,7 @@ If you're adding a table, please add the `table-with-header` class. CSS class he
 
 Contribute a new page to SQL MDN Docs, there's so much to cover!
 
-Just make sure to check out the [contribution guidelines](https://github.com/sqlhabit/sql_mdn_docs/blob/main/CONTRIBUTING.md). :pray:
+Just make sure to check out the [contribution guidelines](https://github.com/sqlhabit/sql-mdn-docs/blob/main/CONTRIBUTING.md). :pray:
 
 ## License
 
