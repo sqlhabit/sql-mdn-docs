@@ -8,7 +8,7 @@ SQL MDN Docs was created to help people who already know or study one SQL flavor
 
 Finally, let's simply build the best SQL documentation in the world a-la [MDN Web Docs for JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
-__TOC__
+[TOC]
 
 ## Project structure
 
