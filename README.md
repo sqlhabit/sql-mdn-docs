@@ -10,6 +10,8 @@ This repo hosts all the content behind https://www.sqlhabit.com/mdn.
 
 </div>
 
+## Why
+
 SQL MDN Docs is here to document all flavors of SQL: MySQL, PostgreSQL, SQLite, Redshift, Google Cloud and Snowflake.
 
 SQL MDN Docs was created to help people who already know or study one SQL flavor (say PostgreSQL) to transition to analytical databases used at companeis they work for – most likely Snowflake, Redshift or Google Cloud.
