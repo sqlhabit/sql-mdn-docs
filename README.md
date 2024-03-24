@@ -6,7 +6,7 @@
 
 This repo hosts all the content behind https://www.sqlhabit.com/mdn.
 
-[:microscope: How it works](?tab=readme-ov-file#how-it-works) | [:mag: How to add a page](?tab=readme-ov-file#how-to-create-a-new-page) |  [:handshake: Contributing](?tab=readme-ov-file#contributing)
+[:microscope: How it works](#how-it-works) | [:mag: How to add a page](#how-to-create-a-new-page) |  [:handshake: Contributing](#contributing)
 
 </div>
 
