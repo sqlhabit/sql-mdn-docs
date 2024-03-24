@@ -13,8 +13,6 @@ see_also_pages:
     url: /mdn/case
 ---
 
-# OR operator in SQL
-
 The `OR` operator in SQL is used to combine multiple conditions in a `WHERE` clause, but unlike [the `AND` operator](/mdn/and), it only requires one of the conditions to be true for a row to be included in the result set. This makes the `OR` operator particularly useful for filtering data based on alternative criteria, allowing for more flexible and inclusive queries.
 
 The `OR` operator comes from a math area called [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra), that operates with `TRUE` or `FALSE` values. Think of `OR` as making a choice between two things: if either one is true, or both are, then the whole thing is true. It's really useful in SQL because it helps you build more flexible conditions for filtering data.

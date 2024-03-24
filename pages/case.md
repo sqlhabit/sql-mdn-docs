@@ -14,8 +14,6 @@ see_also_pages:
     url: /mdn/or
 ---
 
-# CASE operator in SQL
-
 The `CASE` operator in SQL is a versatile control flow tool that allows you to perform if-then-else type logic directly within your SQL queries.
 
 This functionality enables the dynamic transformation of data based on specific conditions, making it incredibly useful for creating calculated fields, custom sorting, or implementing conditional logic in data retrieval.

@@ -3,12 +3,10 @@ published_at: 2024-03-19 19:50
 slug: distinct
 type: keyword
 name: DISTINCT
-title: SQL DISTINCT keyword
+title: DISTINCT keyword in SQL
 description: SQL DISTINCT - DISTINCT tells SQL engine to return only unique records in the result set.
 keywords: SQL, DISTINCT
 ---
-
-# DISTINCT keyword in SQL
 
 The `DISTINCT` keyword in SQL is a powerful tool used to eliminate duplicate rows from a result set.
 

@@ -13,8 +13,6 @@ see_also_pages:
     url: /mdn/case
 ---
 
-# AND Operator in SQL
-
 The `AND` operator in SQL is a logical operator that allows you to combine two or more conditions.
 
 The `AND` operator in SQL, as well as in many programming languages, originates from [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra), a branch of mathematics concerned with operations on logical values. In boolean algebra, an `AND` operator takes two boolean inputs (true/false) and returns true only if both inputs are true. This concept is directly applicable in SQL where `AND` is used to test whether multiple conditions are true simultaneously.

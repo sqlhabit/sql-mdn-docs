@@ -12,8 +12,6 @@ see_also_pages:
     url: /mdn/foobar
 ---
 
-# SQL %KEYWORD%
-
 ## Syntax
 
 ~~~pgsql

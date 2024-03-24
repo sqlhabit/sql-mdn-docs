@@ -3,15 +3,13 @@ published_at: 2024-03-19 20:30
 slug: with-as
 type: clause
 name: WITH .. AS
-title: SQL WITH ... AS clause
+title: WITH..AS clause in SQL
 description: SQL WITH .. AS clause or Common Table Expression is used to define temporary queries (subqueries).
 keywords: SQL, WITH AS
 see_also_pages:
   - name: Common Table Expressions (CTEs) in MySQL
     url: /mdn/common-table-expressions-in-mysql
 ---
-
-# WITH AS clause in SQL
 
 The `WITH..AS` clause in SQL, often referred to as the Common Table Expression (CTE), is a temporary result set which you can reference within a `SELECT` statement.
 

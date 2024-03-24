@@ -8,8 +8,6 @@ description: The abs() function returns the absolute value of a given number.
 keywords: SQL, function, abs()
 ---
 
-# abs() function in SQL
-
 The `abs()` function in SQL is used to return the absolute value of a given number. The absolute value of a number is the value of the number without considering its sign. Therefore, `abs(-10)` is `10`, and similarly, `abs(10)` is `10`. This function is particularly useful in data analysis for normalizing values and ensuring consistency in the data's magnitude, regardless of its direction.
 
 You can try out the `abs()` function even without a table:
