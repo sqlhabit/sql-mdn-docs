@@ -1,7 +1,6 @@
 ---
 published_at: 2024-03-21 21:30
 slug: common-table-expressions-in-mysql
-compatibility_key: mysql-cte-workaround
 type: misc
 name: Common Table Expressions (CTEs) in MySQL
 title: Common Table Expressions (CTEs) in MySQL

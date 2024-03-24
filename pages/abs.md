@@ -1,7 +1,6 @@
 ---
 published_at: 2024-03-22 19:45
 slug: abs
-compatibility_key: abs
 type: function
 name: abs
 title: abs() function in SQL

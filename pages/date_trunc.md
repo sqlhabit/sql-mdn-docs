@@ -1,7 +1,6 @@
 ---
 published_at:
 slug: date_trunc
-compatibility_key: date_trunc
 type: function.timestamp
 name: date_trunc()
 title: SQL date_trunc function

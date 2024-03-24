@@ -12,13 +12,12 @@ Finally, let's simply build the best SQL documentation in the world a-la [MDN We
 
 The main entry point is the [pages folder](https://github.com/sqlhabit/sql-mdn-docs/tree/main/pages) – it contains Markdown files for all pages shown on https://www.sqlhabit.com/mdn.
 
-A page file consists of 2 parts: [YAML](https://en.wikipedia.org/wiki/YAML) config on top of the page:
+A page file consists of 2 parts: [YAML](https://en.wikipedia.org/wiki/YAML) config on top of the page
 
 ```
 ---
 published_at: 2024-03-23 09:00
 slug: and
-compatibility_key: and
 type: operator
 name: AND
 title: AND operator in SQL
@@ -33,7 +32,9 @@ see_also_pages:
 ---
 ```
 
-and [Markdown](https://en.wikipedia.org/wiki/Markdown) content of the page. To be fully specific, the project uses the [Kramdown](https://kramdown.gettalong.org/) flavor of a Markdown.
+followed by [Markdown](https://en.wikipedia.org/wiki/Markdown) content of a page.
+
+:mag: The project uses the [Kramdown](https://kramdown.gettalong.org/) flavor of a Markdown. Kramdown only adds a couple of useful features on top of the regular Markdown syntax.
 
 In every page file you'll see these 2 sections:
 
@@ -45,11 +46,11 @@ In every page file you'll see these 2 sections:
 
 They're replaced with a proper HTML components during the Markdown compilation step:
 
-![DB Compatibility and See also sections](https://github.com/sqlhabit/sql-mdn-docs/blob/main/.README/db_compat_and_see_also.png?raw=true).
+<img src="https://github.com/sqlhabit/sql-mdn-docs/blob/main/.README/db_compat_and_see_also.png?raw=true" alt="" DB Compatibility and See also sections width="600" />
 
-Database compatibility data is stored in a separate YAML file in the [compatibility](https://github.com/sqlhabit/sql-mdn-docs/tree/main/compatibility) folder.
+The "Database compatibility" section gets its content from a separate YAML file in the [compatibility](https://github.com/sqlhabit/sql-mdn-docs/tree/main/compatibility) folder.
 
-See also pages are configured in the page config via the `see_also_pages` key:
+The "See also pages" section is configured via the YAML page config:
 
 ```yaml
 see_also_pages:
@@ -59,7 +60,7 @@ see_also_pages:
     url: /mdn/case
 ```
 
-Finally, there's the [updated_at](https://github.com/sqlhabit/sql-mdn-docs/tree/main/updated_at) folder update dates are stored for each page. This allows us to show the line `This page was last modified on March 23, 2024.` on each page. Good news – these dates are auto-generated via [the post-commit hook](https://github.com/sqlhabit/sql-mdn-docs/blob/main/.overcommit.yml).
+Finally, there's the [updated_at](https://github.com/sqlhabit/sql-mdn-docs/tree/main/updated_at) folder where page update dates are stored. This allows us to show a line like `This page was last modified on March 23, 2024.` on each page. Good news – these dates are auto-generated via [the post-commit hook](https://github.com/sqlhabit/sql-mdn-docs/blob/main/.overcommit.yml).
 
 ## How to create a new page
 
@@ -69,7 +70,7 @@ Finally, there's the [updated_at](https://github.com/sqlhabit/sql-mdn-docs/tree/
 git clone https://github.com/sqlhabit/sql-mdn-docs.git
 ```
 
-### Step 2: run a CLI command to create page and compatibility files
+### Step 2: run a CLI command to create page files
 
 This step assumes you have [Ruby installed](https://www.ruby-lang.org/en/documentation/installation/).
 
@@ -81,29 +82,31 @@ bin/new-page date_trunc
 
 ### Step 3: configure your page
 
-#### Page types
+Go over all config keys and assign them a value.
 
-* statement (SELECT, INSERT, etc)
-* clause (FROM, WHERE, etc)
-* operator (AND, OR, NOT, =, >, <, etc)
-* function (split_part, etc)
-* keyword (AS, DISTINCT, THEN, END, etc)
-* misc (articles on how to bridge gaps betweens databases, etc)
+#### Configure page type
 
-##### Function data types
+Set a page type depending whether you're documenting an actual keyword (statement/clause/etc) or writing an explainer on how to use a keyword in another database (misc):
 
-Atm all SQL functions are grouped via the following generic types (not the actual specific database types because there're too many):
+* **statement** (SELECT, INSERT, etc)
+* **clause** (FROM, WHERE, etc)
+* **operator** (AND, OR, NOT, =, >, <, etc)
+* **function.DATA_TYPE** (split_part, etc)
+* **keyword** (AS, DISTINCT, THEN, END, etc)
+* **misc** (articles on how to bridge gaps betweens databases, etc)
 
-* numeric (we're mixing together actual `integer`, `float`, `numeric`, `bigint`, etc type)
-* text
-* date
-* timestamp
-* boolean
-* array
-* json
-* null
+If you're writing a page for an SQL function, further specify the function data type:
 
-#### SEO meta tags
+* **function.numeric**
+* **function.text**
+* **function.date**
+* **function.timestamp**
+* **function.boolean**
+* **function.array**
+* **function.json**
+* **function.null**
+
+#### Set SEO meta tags
 
 `title`, `description` and `keywords` are used to fill the correspondent meta tags on the page.
 

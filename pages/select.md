@@ -1,7 +1,6 @@
 ---
 published_at: 2024-02-09 21:53
 slug: select
-compatibility_key: select
 type: statement
 name: SELECT
 title: SQL SELECT statement

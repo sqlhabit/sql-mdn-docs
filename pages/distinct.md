@@ -1,7 +1,6 @@
 ---
 published_at: 2024-03-19 19:50
 slug: distinct
-compatibility_key: distinct
 type: keyword
 name: DISTINCT
 title: SQL DISTINCT keyword

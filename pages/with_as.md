@@ -1,7 +1,6 @@
 ---
 published_at: 2024-03-19 20:30
 slug: with-as
-compatibility_key: with-as
 type: clause
 name: WITH .. AS
 title: SQL WITH ... AS clause

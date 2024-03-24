@@ -1,7 +1,6 @@
 ---
 published_at: 2024-03-23 09:00
 slug: and
-compatibility_key: and
 type: operator
 name: AND
 title: AND operator in SQL

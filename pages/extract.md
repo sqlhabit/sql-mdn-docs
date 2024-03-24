@@ -1,7 +1,6 @@
 ---
 published_at:
 slug: extract
-compatibility_key: extract
 type: function.timestamp
 name: extract()
 title: SQL EXTRACT function

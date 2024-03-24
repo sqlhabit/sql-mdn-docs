@@ -1,7 +1,6 @@
 ---
 published_at: 2024-03-23 12:00
 slug: case
-compatibility_key: case
 type: operator
 name: CASE
 title: CASE operator in SQL

@@ -1,7 +1,6 @@
 ---
 published_at: 2024-03-23 10:00
 slug: or
-compatibility_key: or
 type: operator
 name: OR
 title: OR operator in SQL
