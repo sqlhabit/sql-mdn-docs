@@ -6,7 +6,7 @@
 
 This repo hosts all the content behind https://www.sqlhabit.com/mdn.
 
-[:microscope: How it works](https://github.com/sqlhabit/sql-mdn-docs#how-it-works) | [:mag: How to add a page](https://github.com/sqlhabit/sql-mdn-docs#how-to-creaet-a-new-page) |  [:handshake: Contributing](https://github.com/sqlhabit/sql-mdn-docs#contributing)
+[:microscope: How it works](?tab=readme-ov-file#how-it-works) | [:mag: How to add a page](?tab=readme-ov-file#how-to-create-a-new-page) |  [:handshake: Contributing](?tab=readme-ov-file#contributing)
 
 </div>
 
