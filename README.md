@@ -1,26 +1,65 @@
 # SQL Mastery, Discovery, Nuances (MDN) docs
 
-## Page types
+This repo hosts all the content behind https://www.sqlhabit.com/mdn.
 
-* statement (SELECT, INSERT, etc)
-* clause (FROM, WHERE, etc)
-* operator (AND, OR, NOT, =, >, <, etc)
-* function (split_part, etc)
-* keyword (AS, DISTINCT, THEN, END, etc)
-* misc (articles on how to bridge gaps betweens databases, etc)
+SQL MDN Docs is here to document all flavors of SQL: MySQL, PostgreSQL, SQLite, Redshift, Google Cloud and Snowflake.
 
-## Data types
+SQL MDN Docs was created to help people who already know or study one SQL flavor (say PostgreSQL) to transition to analytical databases used at companeis they work for – most likely Snowflake, Redshift or Google Cloud.
 
-Atm all SQL functions are grouped via the following generic types (not the actual specific database types because there're too many):
+Finally, let's simply build the best SQL documentation in the world a-la [MDN Web Docs for JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
-* numeric (we're mixing together actual `integer`, `float`, `numeric`, `bigint`, etc type)
-* text
-* date
-* timestamp
-* boolean
-* array
-* json
-* null
+## Project structure
+
+The main entry point is the [pages folder](https://github.com/sqlhabit/sql-mdn-docs/tree/main/pages) – it contains Markdown files for all pages shown on https://www.sqlhabit.com/mdn.
+
+A page file consists of 2 parts: [YAML](https://en.wikipedia.org/wiki/YAML) config on top of the page:
+
+```
+---
+published_at: 2024-03-23 09:00
+slug: and
+compatibility_key: and
+type: operator
+name: AND
+title: AND operator in SQL
+description: AND is a logical operator in SQL that is used to combine multiple conditions, typically used inside a WHERE clause.
+keywords: SQL, AND, boolean, condition
+compatibility: true
+see_also_pages:
+  - name: OR operator in SQL
+    url: /mdn/or
+  - name: CASE operator in SQL
+    url: /mdn/case
+---
+```
+
+and [Markdown](https://en.wikipedia.org/wiki/Markdown) content of the page. To be fully specific, the project uses the [Kramdown](https://kramdown.gettalong.org/) flavor of a Markdown.
+
+In every page file you'll see these 2 sections:
+
+```
+{{compatibility}}
+
+{{see_also}}
+```
+
+They're replaced with a proper HTML components during the Markdown compilation step:
+
+![DB Compatibility and See also sections](https://raw.githubusercontent.com/makaroni4/habit-tracker/main/.README/db_compat_and_see_also.png).
+
+Database compatibility data is stored in a separate YAML file in the [compatibility](https://github.com/sqlhabit/sql-mdn-docs/tree/main/compatibility) folder.
+
+See also pages are configured in the page config via the `see_also_pages` key:
+
+```yaml
+see_also_pages:
+  - name: OR operator in SQL
+    url: /mdn/or
+  - name: CASE operator in SQL
+    url: /mdn/case
+```
+
+Finally, there's the [updated_at](https://github.com/sqlhabit/sql-mdn-docs/tree/main/updated_at) folder update dates are stored for each page. This allows us to show the line `This page was last modified on March 23, 2024.` on each page. Good news – these dates are auto-generated via [the post-commit hook](https://github.com/sqlhabit/sql-mdn-docs/blob/main/.overcommit.yml).
 
 ## How to create a new page
 
@@ -34,19 +73,45 @@ git clone https://github.com/sqlhabit/sql-mdn-docs.git
 
 This step assumes you have [Ruby installed](https://www.ruby-lang.org/en/documentation/installation/).
 
-Let's say, we want to add a new page for the PostgreSQL `date_trunc` function. Here's the CLI command that creates the necessary files for your new page:
+Let's say, we want to add a new page for the PostgreSQL `date_trunc` function. Here's the CLI command that creates the necessary files (page, compatibility and updated_at files) for your new page:
 
 ```bash
 bin/new-page date_trunc
 ```
 
-### Step 3: add page content
+### Step 3: configure your page
 
-The CLI `bin/new-page` command adds a new file: `pages/date_trunc.md`.
+#### Page types
 
-Fill the YAML section (the top section between `---` symbols).
+* statement (SELECT, INSERT, etc)
+* clause (FROM, WHERE, etc)
+* operator (AND, OR, NOT, =, >, <, etc)
+* function (split_part, etc)
+* keyword (AS, DISTINCT, THEN, END, etc)
+* misc (articles on how to bridge gaps betweens databases, etc)
 
-### Step 4: add compatibility entry
+##### Function data types
+
+Atm all SQL functions are grouped via the following generic types (not the actual specific database types because there're too many):
+
+* numeric (we're mixing together actual `integer`, `float`, `numeric`, `bigint`, etc type)
+* text
+* date
+* timestamp
+* boolean
+* array
+* json
+* null
+
+#### SEO meta tags
+
+`title`, `description` and `keywords` are used to fill the correspondent meta tags on the page.
+
+### Step 4: add page content
+
+Add the Markdown page content below the config section.
+
+### Step 5: add compatibility entry
 
 The CLI `bin/new-page` command also adds a compatibility file: `compatibiltiy/date_trunc.yml`.
 
