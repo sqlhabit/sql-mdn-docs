@@ -2,7 +2,7 @@
 
 # SQL Mastery, Discovery, Nuances (MDN) docs
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-47A3F3.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This repo hosts all the content behind https://www.sqlhabit.com/mdn.
 
