@@ -8,13 +8,13 @@ SQL MDN Docs was created to help people who already know or study one SQL flavor
 
 Finally, let's simply build the best SQL documentation in the world a-la [MDN Web Docs for JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
-[TOC]
+## How it works
 
-## Project structure
+This repo is basically a content database for the [SQL MDN Docs website](https://www.sqlhabit.com/mdn).
 
-The main entry point is the [pages folder](https://github.com/sqlhabit/sql-mdn-docs/tree/main/pages) – it contains Markdown files for all pages shown on https://www.sqlhabit.com/mdn.
+The main entry point is the [pages folder](https://github.com/sqlhabit/sql-mdn-docs/tree/main/pages). Behind the scenes, SQL Habit website pull all published Markdown pages from this folder and converts them to HTML pages shown at https://www.sqlhabit.com/mdn.
 
-A page file consists of 2 parts: [YAML](https://en.wikipedia.org/wiki/YAML) config on top of the page
+A page file consists of 2 parts: [YAML](https://en.wikipedia.org/wiki/YAML) config on top of the file
 
 ```
 ---
@@ -34,9 +34,9 @@ see_also_pages:
 ---
 ```
 
-followed by [Markdown](https://en.wikipedia.org/wiki/Markdown) content of a page.
+followed by the [Markdown](https://en.wikipedia.org/wiki/Markdown) content of a page.
 
-:mag: The project uses the [Kramdown](https://kramdown.gettalong.org/) flavor of a Markdown. Kramdown only adds a couple of useful features on top of the regular Markdown syntax.
+:mag: To be precise, we're using the [Kramdown](https://kramdown.gettalong.org/) flavor of Markdown. Kramdown adds a couple of useful features on top of the regular Markdown syntax.
 
 In every page file you'll see these 2 sections:
 
@@ -112,6 +112,16 @@ If you're writing a page for an SQL function, further specify the function data 
 
 `title`, `description` and `keywords` are used to fill the correspondent meta tags on the page.
 
+The `title` will also be used as a page headline (h1 tag).
+
+#### How to hide compatibility table
+
+If you're adding a how-to page, make sure to disable the DB compatibility table by setting:
+
+```yaml
+compatibility: false
+```
+
 ### Step 4: add page content
 
 Add the Markdown page content below the config section.
@@ -120,19 +130,19 @@ Add the Markdown page content below the config section.
 
 The CLI `bin/new-page` command also adds a compatibility file: `compatibiltiy/date_trunc.yml`.
 
-This is a [YAML](https://en.wikipedia.org/wiki/YAML) file that powers the "Database compatibility" section.
+Add correct versions for each database by setting the `min_version` and `min_version_released_at` keys ([example](https://github.com/sqlhabit/sql-mdn-docs/blob/main/compatibility/with_as.yml#L2)).
 
-Add correct versions for each database.
+If necessary, link related pages ([example](https://github.com/sqlhabit/sql-mdn-docs/blob/main/compatibility/with_as.yml)).
 
-## Page features
+## Markdown content features
 
-### Example queries
+### Runnable queries
 
 When creating a new page, make sure to provide an example (otherwise it's not really MDN – Mastery, Discovery & Nuances). When a new page is published, all its queries are runnable by default inside [the Bindle database](https://sqlhabit.github.io/sql_schema_visualizer/).
 
 In the next paragraphs you'll learn how to specify a different dataset or disable the "Run" button for a query.
 
-### Specify query dataset
+### How to specify query dataset
 
 SQL Habit allows running `SELECT` queries in the following datasets:
 
@@ -156,7 +166,7 @@ FROM transactions
 {: data-dataset-id="3"}
 ```
 
-### Disable "Run" link for a query
+### How to disable "Run query" link
 
 SQL Habit allows only `SELECT` queries (otherwise people will modify datasets), so we have to disable non-SELECT queries. You can do it by adding the `.js-no-run-query-link` class to a query in Markdown:
 
@@ -168,7 +178,7 @@ SET country = 'au'
 {: .js-no-run-query-link}
 ```
 
-### Adding a table
+### How to add a table
 
 If you're adding a table, please add the `table-with-header` class. CSS class helps to avoid CSS collisions with other tables on the page (DB compatibility table, etc):
 
