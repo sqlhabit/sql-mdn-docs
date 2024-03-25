@@ -5,7 +5,7 @@ postgresql:
 sqlite:
 redshift:
   min_version: 0
-google_cloud:
+big_query:
   min_version: 0
 snowflake:
   min_version: 0
