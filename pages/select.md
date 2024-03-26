@@ -6,6 +6,9 @@ name: SELECT
 title: SELECT statement in SQL
 description: SQL SELECT - SELECT statement is used to fetch the data from a database table. SELECT statement returns a table that's also called a result set.
 keywords: SQL, SELECT
+see_also_pages:
+  - name: FROM keyword in SQL
+    url: /mdn/from
 ---
 
 `SELECT` is a fundamental SQL command that is used to retrieve data from one or more tables in a database. It is one of the most commonly used commands in SQL for querying a database to fetch data that matches specific criteria.
