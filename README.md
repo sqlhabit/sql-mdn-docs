@@ -109,6 +109,8 @@ Set a page type depending whether you're documenting an actual keyword (statemen
 
 If you're writing a page for an SQL function, further specify the function data type:
 
+* **function.aggregate**
+* **function.window**
 * **function.numeric**
 * **function.text**
 * **function.date**
