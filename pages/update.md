@@ -5,10 +5,12 @@ type: statement
 name: UPDATE
 title: UPDATE statement in SQL
 description: UPDATE statement in SQL is used to modify records in a table.
-keywords: SQL, UPDATE
+keywords: SQL, UPDATE, statement
 see_also_pages:
   - name: SELECT statement in SQL
     url: /mdn/select
+  - name: DELETE statement in SQL
+    url: /mdn/delete
 ---
 
 `UPDATE` is a SQL command used to modify existing records in a table. It allows you to change the data of one or multiple rows based on specific criteria.
