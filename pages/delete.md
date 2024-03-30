@@ -11,6 +11,8 @@ see_also_pages:
     url: /mdn/select
   - name: UPDATE statement in SQL
     url: /mdn/update
+  - name: INSERT statement in SQL
+    url: /mdn/insert
 ---
 
 `DELETE` is a SQL command used to remove rows from a table based on a specific condition.

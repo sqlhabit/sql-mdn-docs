@@ -11,6 +11,8 @@ see_also_pages:
     url: /mdn/select
   - name: DELETE statement in SQL
     url: /mdn/delete
+  - name: INSERT statement in SQL
+    url: /mdn/insert
 ---
 
 `UPDATE` is a SQL command used to modify existing records in a table. It allows you to change the data of one or multiple rows based on specific criteria.

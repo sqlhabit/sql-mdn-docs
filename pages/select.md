@@ -9,6 +9,12 @@ keywords: SQL, SELECT
 see_also_pages:
   - name: FROM keyword in SQL
     url: /mdn/from
+  - name: DELETE statement in SQL
+    url: /mdn/delete
+  - name: INSERT statement in SQL
+    url: /mdn/insert
+  - name: UPDATE statement in SQL
+    url: /mdn/update
 ---
 
 `SELECT` is a fundamental SQL command that is used to retrieve data from one or more tables in a database. It is one of the most commonly used commands in SQL for querying a database to fetch data that matches specific criteria.
