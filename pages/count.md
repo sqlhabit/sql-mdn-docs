@@ -3,14 +3,16 @@ published_at: 2024-03-29 09:45
 slug: count
 type: function.aggregate
 name: COUNT
-title: Aggregate function COUNT in SQL
-description: Aggregate function COUNT in SQL is used to count records.
-keywords: SQL, aggregate function
+title: Aggregate function COUNT() in SQL
+description: Aggregate function COUNT() in SQL is used to count records.
+keywords: SQL, COUNT, aggregate function
 see_also_pages:
   - name: GROUP BY clause in SQL
     url: /mdn/group-by
   - name: DISTINCT keyword in SQL
     url: /mdn/distinct
+  - name: Aggregate function SUM() in SQL
+    url: /mdn/sum
 ---
 
 The `COUNT()` function in SQL is an aggregate function that returns the number of rows that match a specified condition. It is one of the most frequently used functions for data analysis, as it helps in quantifying the number of entries in a database table or the number of entries that meet certain criteria.
