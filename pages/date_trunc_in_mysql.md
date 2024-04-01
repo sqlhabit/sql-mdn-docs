@@ -1,6 +1,6 @@
 ---
 published_at:
-slug: date_trunc_in_mysql
+slug: date-trunc-in-mysql
 type: "%KEYWORD_TYPE%"
 name: date_trunc() function in MySQL
 title: date_trunc() function in MySQL

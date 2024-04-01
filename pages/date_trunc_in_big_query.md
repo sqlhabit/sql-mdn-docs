@@ -1,6 +1,6 @@
 ---
 published_at:
-slug: date_trunc_in_big_query
+slug: date-trunc-in-bigquery
 type: "%KEYWORD_TYPE%"
 name: date_trunc() function in BigQuery
 title: date_trunc() function in BigQuery
