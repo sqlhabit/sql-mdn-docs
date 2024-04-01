@@ -2,20 +2,20 @@ mysql:
   min_version:
   related_pages:
     - name: date_trunc() function in MySQL
-      url: /mdn/common-table-expressions-in-mysql
+      url: /mdn/date-trunc-in-mysql
 postgresql:
   min_version: 0
 sqlite:
   min_version:
   related_pages:
     - name: date_trunc() function in SQlite
-      url: /mdn/common-table-expressions-in-sqlite
+      url: /mdn/date-trunc-in-sqlite
 redshift:
   min_version: 0
 big_query:
   min_version:
   related_pages:
     - name: date_trunc() function in BigQuery
-      url: /mdn/common-table-expressions-in-bigquery
+      url: /mdn/date-trunc-in-bigquery
 snowflake:
   min_version: 0
