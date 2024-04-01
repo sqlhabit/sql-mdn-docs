@@ -2,7 +2,7 @@
 published_at:
 slug: extract
 type: function.timestamp
-name: extract()
+name: extract
 title: EXTRACT function in SQL
 description: SQL EXTRACT - EXTRACT function is used to extract a part of date (year, month, day, etc) from a timestamp.
 keywords: SQL, EXTRACT
