@@ -56,6 +56,17 @@ GROUP BY 1
 ORDER BY 1 DESC
 ~~~
 
+Sometimes you might even need a finer precision, so here's an example with an hourly pageviews trend:
+
+~~~pgsql
+SELECT
+  date_trunc('hour', created_at) AS hour,
+  COUNT(*)
+FROM web_analytics.pageviews
+GROUP BY 1
+ORDER BY 1 DESC
+~~~
+
 The `date_trunc` function is not only a useful tool for data analysis but also a great feature to practice and understand how SQL handles dates and times. Experiment with different date/time precisions and datasets to learn how to manipulate and interpret time series effectively. :bar_chart:
 
 {{compatibility}}
