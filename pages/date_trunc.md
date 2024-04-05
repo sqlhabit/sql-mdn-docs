@@ -1,6 +1,6 @@
 ---
 published_at: 2024-03-31 22:00
-slug: date_trunc
+slug: date-trunc
 type: function.timestamp
 name: date_trunc
 title: date_trunc() function in SQL
