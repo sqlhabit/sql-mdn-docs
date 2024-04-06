@@ -6,6 +6,14 @@ require "date"
 UPDATE_DATES_FOLDER = "updated_at"
 PAGES_FOLDER = "pages"
 
+def extract_updated_at(log_line)
+  if log_line.nil? || log.line.size == 0
+    return Date.today
+  end
+
+  Date.parse(log_line.strip)
+end
+
 unless Dir.exist?(UPDATE_DATES_FOLDER)
   Dir.mkdir(UPDATE_DATES_FOLDER)
 end
@@ -15,7 +23,7 @@ Dir[File.join(PAGES_FOLDER, "*.md")].each do |page_file|
 
   result = `git log --format=%cs pages/#{slug}.md`
 
-  updated_at = Date.parse(result.lines.first.strip)
+  updated_at = extract_updated_at(result.lines.first)
 
   File.open(File.join(UPDATE_DATES_FOLDER, slug), "w") do |f|
     f.puts(updated_at)
