@@ -5,6 +5,10 @@ postgresql:
 sqlite:
   min_version: 0
   partial_support: true
+  note: >
+    The `round()` function in SQLite **does not** support negative precision.
+
+    The SQLite database engine will simply ignore a negative precision argument and round it to the closest integer.
 redshift:
   min_version: 0
 big_query:
