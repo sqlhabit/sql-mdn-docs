@@ -6,6 +6,11 @@ name: round
 title: round() function in SQL
 description: The round() function rounds a number to the closest higher integer.
 keywords: SQL, function, round()
+see_also_pages:
+  - name: ceil() function in SQL
+    url: /mdn/ceil
+  - name: floor() function in SQL
+    url: /mdn/floor
 ---
 
 The `round()` function in SQL is used to round a numeric field to the nearest value with a specified precision. It's particularly useful in financial calculations, data reporting, or anytime you need to standardize the number of decimal places in your data output.

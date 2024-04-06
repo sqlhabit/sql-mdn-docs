@@ -6,6 +6,11 @@ name: floor
 title: floor() function in SQL
 description: The floor() function rounds a number to the closest lower integer.
 keywords: SQL, function, floor()
+see_also_pages:
+  - name: round() function in SQL
+    url: /mdn/round
+  - name: ceil() function in SQL
+    url: /mdn/ceil
 ---
 
 The `floor()` function in SQL is used to return the largest integer less than or equal to a specified number.

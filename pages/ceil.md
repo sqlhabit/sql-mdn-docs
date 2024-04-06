@@ -6,6 +6,11 @@ name: ceil
 title: ceil() function in SQL
 description: The ceil() function rounds a number to the closest higher integer.
 keywords: SQL, function, ceil()
+see_also_pages:
+  - name: round() function in SQL
+    url: /mdn/round
+  - name: floor() function in SQL
+    url: /mdn/floor
 ---
 
 The `ceil()` (short from ceiling) function in SQL is used to return the smallest integer value that is greater than or equal to a specified number. Essentially, it rounds up the given value to the nearest integer. This function is particularly useful in scenarios where you need to ensure that values are rounded up, such as in inventory management (when you can't have 7.8 of a physical item).
