@@ -7,7 +7,7 @@ UPDATE_DATES_FOLDER = "updated_at"
 PAGES_FOLDER = "pages"
 
 def extract_updated_at(log_line)
-  if log_line.nil? || log.line.size == 0
+  if log_line.nil? || log_line.size == 0
     return Date.today
   end
 
