@@ -11,8 +11,14 @@ see_also_pages:
     url: /mdn/group-by
   - name: DISTINCT keyword in SQL
     url: /mdn/distinct
+  -- name: Aggregate function MAX() in SQL
+    url: /mdn/max
+  - name: Aggregate function MIN() in SQL
+    url: /mdn/min
   - name: Aggregate function SUM() in SQL
     url: /mdn/sum
+  - name: Aggregate function AVG() in SQL
+    url: /mdn/avg
 ---
 
 The `COUNT()` function in SQL is an aggregate function that returns the number of rows that match a specified condition. It is one of the most frequently used functions for data analysis, as it helps in quantifying the number of entries in a database table or the number of entries that meet certain criteria.

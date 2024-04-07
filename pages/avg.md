@@ -7,6 +7,8 @@ title: Aggregate function AVG() in SQL
 description: The `AVG()` function in SQL is an aggregate function that returns the average value from a selected column.
 keywords: SQL, MIN, aggregate function
 see_also_pages:
+  - name: Aggregate function COUNT() in SQL
+    url: /mdn/count
   - name: Aggregate function MAX() in SQL
     url: /mdn/max
   - name: Aggregate function MIN() in SQL

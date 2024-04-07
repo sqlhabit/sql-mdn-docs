@@ -11,6 +11,10 @@ see_also_pages:
     url: /mdn/min
   - name: Aggregate function SUM() in SQL
     url: /mdn/sum
+  - name: Aggregate function COUNT() in SQL
+    url: /mdn/count
+    - name: Aggregate function AVG() in SQL
+    url: /mdn/avg
   - name: GROUP BY clause in SQL
     url: /mdn/group-by
 ---

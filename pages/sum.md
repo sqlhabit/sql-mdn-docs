@@ -7,10 +7,16 @@ title: Aggregate function SUM() in SQL
 description: SUM() is an aggregate function in SQL that calculates the total sum of a numeric column.
 keywords: SQL, SUM, aggregate function
 see_also_pages:
-  - name: GROUP BY clause in SQL
-    url: /mdn/group-by
   - name: Aggregate function COUNT() in SQL
     url: /mdn/count
+  - name: Aggregate function AVG() in SQL
+    url: /mdn/avg
+  - name: Aggregate function MAX() in SQL
+    url: /mdn/max
+  - name: Aggregate function MIN() in SQL
+    url: /mdn/min
+  - name: GROUP BY clause in SQL
+    url: /mdn/group-by
 ---
 
 `SUM()` is an aggregate function in SQL that calculates the total sum of a numeric column. The `SUM` aggregate function is a must for financial calculations, statistical analysis, and more.
