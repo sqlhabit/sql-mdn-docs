@@ -11,7 +11,7 @@ see_also_pages:
     url: /mdn/group-by
   - name: DISTINCT keyword in SQL
     url: /mdn/distinct
-  -- name: Aggregate function MAX() in SQL
+  - name: Aggregate function MAX() in SQL
     url: /mdn/max
   - name: Aggregate function MIN() in SQL
     url: /mdn/min
