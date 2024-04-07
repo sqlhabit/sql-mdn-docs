@@ -1,0 +1,33 @@
+mysql:
+  min_version: 0
+postgresql:
+  min_version: 0
+  partial_support: true
+  note: >
+    In PostgreSQL the `coalesce()` function is expected to receive arguments of only one type (and `NULL`-s).
+
+    This query will be executed successfully: `coalesce(NULL, 123, 456)` (all arguments are numerical).
+
+    This query will fail: `coalesce(NULL, 123, 'abc')` (since we're mixing numerical and text arguments).
+sqlite:
+  min_version: 0
+redshift:
+  min_version: 0
+  partial_support: true
+  note: >
+    In Redshift the `coalesce()` function is expected to receive arguments of only one type (and `NULL`-s).
+
+    This query will be executed successfully: `coalesce(NULL, 123, 456)` (all arguments are numerical).
+
+    This query will fail: `coalesce(NULL, 123, 'abc')` (since we're mixing numerical and text arguments).
+big_query:
+  min_version: 0
+  partial_support: true
+  note: >
+    In BigQuery the `coalesce()` function is expected to receive arguments of only one type (and `NULL`-s).
+
+    This query will be executed successfully: `coalesce(NULL, 123, 456)` (all arguments are numerical).
+
+    This query will fail: `coalesce(NULL, 123, 'abc')` (since we're mixing numerical and text arguments).
+snowflake:
+  min_version: 0

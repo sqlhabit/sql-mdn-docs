@@ -119,6 +119,7 @@ If you're writing a page for an SQL function, further specify the function data 
 * **function.array**
 * **function.json**
 * **function.null**
+* **function.conditional**
 
 #### Set SEO meta tags
 
