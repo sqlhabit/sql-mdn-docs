@@ -17,6 +17,8 @@ see_also_pages:
     url: /mdn/limit
   - name: ORDER BY clause in SQL
     url: /mdn/order-by
+  - name: HAVING clause in SQL
+    url: /mdn/having
 ---
 
 The `GROUP BY` clause in SQL is critical for organizing data into groups based on one or more columns. It's always accompanied by aggregate functions like `COUNT()`, `SUM()`, `AVG()`, `MAX()`, and `MIN()`, allowing for detailed analysis of subsets within a dataset. For example, counting a number of users per country, average check per cart in an E-commerce store, etc.
