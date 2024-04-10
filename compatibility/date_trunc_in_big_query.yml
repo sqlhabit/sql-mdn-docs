@@ -16,6 +16,7 @@ sqlite:
       url: /mdn/date-trunc-in-sqlite
 redshift:
   min_version: 0
+  partial_support: true
   related_pages:
     - name: date_trunc() function in SQL
       url: /mdn/date-trunc
@@ -23,6 +24,7 @@ big_query:
   min_version: 0
 snowflake:
   min_version: 0
+  partial_support: true
   related_pages:
     - name: date_trunc() function in SQL
       url: /mdn/date-trunc
