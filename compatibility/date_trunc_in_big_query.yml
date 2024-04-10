@@ -1,12 +1,28 @@
 mysql:
-  min_version: 0
+  min_version:
+  related_pages:
+    - name: date_trunc() function in MySQL
+      url: /mdn/date-trunc-in-mysql
 postgresql:
   min_version: 0
+  partial_support: true
+  related_pages:
+    - name: date_trunc() function in SQL
+      url: /mdn/date-trunc
 sqlite:
-  min_version: 0
+  min_version:
+  related_pages:
+    - name: date_trunc() function in SQLite
+      url: /mdn/date-trunc-in-sqlite
 redshift:
   min_version: 0
+  related_pages:
+    - name: date_trunc() function in SQL
+      url: /mdn/date-trunc
 big_query:
   min_version: 0
 snowflake:
   min_version: 0
+  related_pages:
+    - name: date_trunc() function in SQL
+      url: /mdn/date-trunc

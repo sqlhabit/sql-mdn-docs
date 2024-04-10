@@ -13,7 +13,8 @@ sqlite:
 redshift:
   min_version: 0
 big_query:
-  min_version:
+  min_version: 0
+  partial_support: true
   related_pages:
     - name: date_trunc() function in BigQuery
       url: /mdn/date-trunc-in-bigquery
