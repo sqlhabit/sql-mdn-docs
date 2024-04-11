@@ -6,7 +6,6 @@ name: CASE
 title: CASE operator in SQL
 description: CASE operator in SQL is used for a if-then-else control flow.
 keywords: SQL, CASE, operator, if/else, conditions
-compatibility: true
 see_also_pages:
   - name: AND operator in SQL
     url: /mdn/and
