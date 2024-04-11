@@ -24,14 +24,14 @@ The `replace()` function is an essential tool in SQL for altering string data. I
 The basic syntax for the `replace()` function is straightforward:
 
 ~~~pgsql
-REPLACE(string, substring_to_replace, replacement_substring)
+SELECT REPLACE(string, substring_to_replace, replacement_substring)
 ~~~
 {: .js-no-run-query-link }
 
 We can see the `replace()` function in action without a table:
 
 ~~~pgsql
-REPLACE('foobar@gmail.com', '@gmail.com', '')
+SELECT REPLACE('foobar@gmail.com', '@gmail.com', '')
 ~~~
 
 ## Using `replace()` to clean data
@@ -50,15 +50,15 @@ This query searches the `genre` column for the misspelling 'Clasic' and replaces
 
 ## Removing unwanted characters
 
-Sometimes you might want to remove certain characters from a string, like removing dashes from phone numbers or dots from emails to standardize the format. You can do this by replacing the character with an empty string:
+Sometimes you might want to remove certain characters from a string, like removing dashes from phone numbers to standardize the format. You can do this by replacing the character with an empty string:
 
 ~~~pgsql
 SELECT
-  REPLACE(email, '.', '')
-FROM users
+  REPLACE(url, 'https://', '')
+FROM web_analytics.pageviews
 ~~~
 
-This will return user emails without dots, making them more uniform.
+In this example we're removing the "https://" substring from all URLs in the pageviews table. This will simplify our web analytics reports and make them easier to digest, since the "https://" substring present in every single URL.
 
 ## Handling NULL values
 
