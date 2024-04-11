@@ -1,0 +1,14 @@
+mysql:
+  min_version: 0
+postgresql:
+  min_version: 0
+sqlite:
+  min_version:
+  note: >
+    Unfortunately, the SQLite database does not support the `reverse()` function.
+redshift:
+  min_version: 0
+big_query:
+  min_version: 0
+snowflake:
+  min_version: 0
