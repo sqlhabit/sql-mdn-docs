@@ -13,7 +13,7 @@ see_also_pages:
     url: /mdn/substring
   - name: CASE operator in SQL
     url: /mdn/case
-  - name: coalesce() function in SQL
+  - name: COALESCE() function in SQL
     url: /mdn/coalesce
 ---
 
