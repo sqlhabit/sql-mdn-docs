@@ -9,7 +9,7 @@ keywords: SQL, reverse, function
 see_also_pages:
   - name: lower() function in SQL
     url: /mdn/lower
-    - name: upper() function in SQL
+  - name: upper() function in SQL
     url: /mdn/upper
   - name: length() function in SQL
     url: /mdn/length
