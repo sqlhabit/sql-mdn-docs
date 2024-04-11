@@ -7,8 +7,6 @@ title: lower() function in SQL
 description: The lower() function in SQL is used to convert all letters in a specified string to lowercase.
 keywords: SQL, lower, function
 see_also_pages:
-  - name: lower() function in SQL
-    url: /mdn/lower
   - name: upper() function in SQL
     url: /mdn/upper
   - name: length() function in SQL
@@ -26,7 +24,7 @@ The `lower()` function is used to convert all letters in a specified string to l
 The syntax for the `lower()` function is straightforward:
 
 ~~~pgsql
-SELECT LOWER(column_name)
+SELECT lower(column_name)
 FROM table_name
 ~~~
 {: .js-no-run-query-link }
@@ -47,7 +45,7 @@ Consider a scenario where you have a database of users, and you want to find all
 SELECT *
 FROM users
 WHERE
-  LOWER(first_name) = 'john'
+  lower(first_name) = 'john'
 ~~~
 
 This query converts all names to lowercase before comparing them to 'john', ensuring that the comparison is case-insensitive.
@@ -60,7 +58,7 @@ For a more generic name analysis we'd use the `lower()` function inside the [`SE
 WITH modified_users AS (
   SELECT
     *,
-    LOWER(first_name) AS lower_cased_first_name
+    lower(first_name) AS lower_cased_first_name
   FROM users
 )
 
