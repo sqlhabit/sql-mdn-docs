@@ -1,5 +1,5 @@
 ---
-published_at: 2024-04-12 07:30
+published_at: 2024-04-13 07:40
 slug: left
 type: function.text
 name: left
