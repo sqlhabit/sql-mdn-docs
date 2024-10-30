@@ -4,9 +4,18 @@ postgresql:
   min_version: 0
 sqlite:
   min_version:
+  related_pages:
+    - name: current_timestamp function in SQL
+      url: /mdn/current-timestamp
 redshift:
   min_version: 0
 big_query:
   min_version:
+  related_pages:
+    - name: current_timestamp function in SQL
+      url: /mdn/current-timestamp
 snowflake:
   min_version:
+  related_pages:
+    - name: current_timestamp function in SQL
+      url: /mdn/current-timestamp

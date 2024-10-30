@@ -2,9 +2,11 @@
 
 require "erb"
 require "fileutils"
+require "date"
 
 COMPATIBILITY_FOLDER = "compatibility"
 PAGES_FOLDER = "pages"
+UPDATED_AT_FOLDER = "updated_at"
 
 def render_template(file_path, params)
   template_content = File.read(file_path)
@@ -42,4 +44,9 @@ end
 
 File.open(compatibility_file_name, "w") do |file|
   file.puts(File.read("templates/compatibility.yml"))
+end
+
+updated_at_file_name = File.join(UPDATED_AT_FOLDER, page_slug)
+File.open(updated_at_file_name, "w") do |file|
+  file.puts(Date.today)
 end
