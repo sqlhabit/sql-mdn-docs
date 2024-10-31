@@ -8,6 +8,9 @@ postgresql:
 sqlite:
   min_version: 0
   partial_support: true
+  related_pages:
+    - name: How to generate random numbers in SQLite
+      url: /mdn/how-to-genereate-random-numbers-in-sqlite
   note: >
     In SQLite the `random()` function returns a random 64-bit integer (a number between between -9223372036854775808 and +9223372036854775807) instead of a float number between 0 and 1.
 redshift:
