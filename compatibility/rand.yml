@@ -1,0 +1,21 @@
+mysql:
+  min_version: 0
+postgresql:
+  min_version:
+  related_pages:
+    - name: random() function in PostgreSQL
+      url: /mdn/random
+sqlite:
+  min_version:
+  related_pages:
+    - name: random() function in SQLite
+      url: /mdn/random
+redshift:
+  min_version: 0
+big_query:
+  min_version: 0
+snowflake:
+  min_version:
+  related_pages:
+    - name: random() function in Snowflake
+      url: /mdn/random

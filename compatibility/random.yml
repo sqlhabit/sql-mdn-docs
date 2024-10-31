@@ -1,5 +1,8 @@
 mysql:
   min_version:
+  related_pages:
+    - name: rand() function in MySQL
+      url: /mdn/rand
 postgresql:
   min_version: 0
 sqlite:
@@ -11,6 +14,9 @@ redshift:
   min_version: 0
 big_query:
   min_version:
+  related_pages:
+    - name: rand() function in BigQuery
+      url: /mdn/rand
 snowflake:
   min_version: 0
   partial_support: true
