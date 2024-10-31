@@ -20,5 +20,8 @@ big_query:
 snowflake:
   min_version: 0
   partial_support: true
+  related_pages:
+    - name: How to generate random numbers in Snowflake
+      url: /mdn/how-to-genereate-random-numbers-in-snowflake
   note: >
     In Snowflake the `random()` function returns a random 64-bit integer (a number between between -9223372036854775808 and +9223372036854775807) instead of a float number between 0 and 1.
