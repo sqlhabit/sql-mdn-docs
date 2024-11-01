@@ -10,6 +10,8 @@ compatibility: true
 see_also_pages:
   - name: now() function in SQL
     url: /mdn/now
+  - name: current_date function in SQL
+    url: /mdn/current-date
 ---
 
 The `current_timestamp` function in SQL is used to retrieve the current date and time.

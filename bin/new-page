@@ -31,7 +31,7 @@ end
 page_file_name = File.join(PAGES_FOLDER, "#{page_slug}.md")
 compatibility_file_name = File.join(COMPATIBILITY_FOLDER, "#{page_slug}.yml")
 
-if File.exists?(page_file_name) || File.exists?(compatibility_file_name)
+if File.exist?(page_file_name) || File.exist?(compatibility_file_name)
   puts %{⚠️\s\sPage "#{page_slug}" already exists.}
   return
 end
