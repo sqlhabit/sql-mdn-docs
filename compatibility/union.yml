@@ -1,0 +1,20 @@
+mysql:
+  min_version: 0
+postgresql:
+  min_version: 0
+sqlite:
+  min_version: 0
+redshift:
+  min_version: 0
+big_query:
+  min_version: 0
+  partial_support: true
+  related_pages:
+    - name: UNION operator in BigQuery
+      url: /mdn/union-operator-in-big-query
+  note: >
+    In BigQuery the `UNION` operator will throw an exception like `Expected keyword ALL or keyword DISTINCT`.
+
+    To emulate `UNION` in BigQuery and combine two result sets without duplicates we need to use the `UNION` operator with the `DISTINCT` keyword.
+snowflake:
+  min_version: 0
