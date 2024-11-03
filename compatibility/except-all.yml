@@ -1,0 +1,13 @@
+mysql:
+  min_version: 8.0.31
+  min_version_released_at: 2022-10-11
+postgresql:
+  min_version: 0
+sqlite:
+  min_version:
+redshift:
+  min_version:
+big_query:
+  min_version:
+snowflake:
+  min_version:

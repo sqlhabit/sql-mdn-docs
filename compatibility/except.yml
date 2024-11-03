@@ -1,0 +1,23 @@
+mysql:
+  min_version: 8.0.31
+  min_version_released_at: 2022-10-11
+postgresql:
+  min_version: 0
+sqlite:
+  min_version: 0
+redshift:
+  min_version: 0
+big_query:
+  min_version: 0
+  partial_support: true
+  related_pages:
+    - name: EXCEPT operator in BigQuery
+      url: /mdn/except-operator-in-big-query
+    - name: Set operators in BigQuery
+      url: https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#set_operators
+  note: >
+    In BigQuery the `EXCEPT` operator will throw an exception like `Expected keyword ALL or keyword DISTINCT but got keyword SELECT`.
+
+    To emulate `EXCEPT` in BigQuery and combine two result sets without duplicates we need to use the `EXCEPT` operator with the `DISTINCT` keyword.
+snowflake:
+  min_version: 0
