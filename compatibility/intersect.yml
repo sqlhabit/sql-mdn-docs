@@ -14,8 +14,8 @@ big_query:
     - name: Set operators in BigQuery
       url: https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#set_operators
   note: >
-    In BigQuery the `EXCEPT` operator will throw an exception like `Expected keyword ALL or keyword DISTINCT but got keyword SELECT`.
+    In BigQuery the `INTERSECT` operator will throw an exception like `Expected keyword ALL or keyword DISTINCT but got keyword SELECT`.
 
-    The `EXCEPT` operator in BigQuery requires the `DISTINCT` keyword to subtract two sets without duplicates.
+    The `INTERSECT` operator in BigQuery requires the `DISTINCT` keyword to intersect two sets without duplicates.
 snowflake:
   min_version: 0
