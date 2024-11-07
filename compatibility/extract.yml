@@ -3,6 +3,7 @@ mysql:
 postgresql:
   min_version: 0
 sqlite:
+  min_version:
 redshift:
   min_version: 0
 big_query:
