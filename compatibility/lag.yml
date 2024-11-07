@@ -1,0 +1,27 @@
+mysql:
+  min_version: 0
+postgresql:
+  min_version: 0
+sqlite:
+  min_version: 0
+redshift:
+  min_version: 0
+  partial_support: true
+  note: >
+    The `LAG()` function in Redshift always requires sorting in the `OVER()` clause: `LAG(column_name) OVER (ORDER BY timestamp_column_name)`.
+
+    Without it you'll see an error like this: `ERROR: window function lag requires an order by clause`.
+big_query:
+  min_version: 0
+  partial_support: true
+  note: >
+    The `LAG()` function in BigQuery always requires sorting in the `OVER()` clause: `LAG(column_name) OVER (ORDER BY timestamp_column_name)`.
+
+    Without it you'll see an error like this: `Query error: Window ORDER BY is required for analytic function lag at [5:15]`.
+snowflake:
+  min_version: 0
+  partial_support: true
+  note: >
+    The `LAG()` function in BigQuery always requires sorting in the `OVER()` clause: `LAG(column_name) OVER (ORDER BY timestamp_column_name)`.
+
+    Without it you'll see an error like this: `SQL compilation error: Window function type [LAG] requires ORDER BY in window specification.`.
