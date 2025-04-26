@@ -3,6 +3,7 @@
 require "erb"
 require "fileutils"
 require "date"
+require "active_support/core_ext/string/inflections"
 
 COMPATIBILITY_FOLDER = "compatibility"
 PAGES_FOLDER = "pages"
@@ -21,18 +22,21 @@ def render_template(file_path, params)
   erb_template.result(context_binding)
 end
 
-page_slug = ARGV[0]
+slug = ARGV[0]
 
-if page_slug.nil?
+if slug.nil?
   puts %{⚠️\s\sPlease enter a page slug like "select" or "with_as".}
   return
 end
 
-page_file_name = File.join(PAGES_FOLDER, "#{page_slug}.md")
-compatibility_file_name = File.join(COMPATIBILITY_FOLDER, "#{page_slug}.yml")
+page_slug = slug.gsub("_", "-").parameterize
+file_slug = slug.underscore
+
+page_file_name = File.join(PAGES_FOLDER, "#{file_slug}.md")
+compatibility_file_name = File.join(COMPATIBILITY_FOLDER, "#{file_slug}.yml")
 
 if File.exist?(page_file_name) || File.exist?(compatibility_file_name)
-  puts %{⚠️\s\sPage "#{page_slug}" already exists.}
+  puts %{⚠️\s\sPage "#{file_slug}" already exists.}
   return
 end
 
@@ -46,7 +50,7 @@ File.open(compatibility_file_name, "w") do |file|
   file.puts(File.read("templates/compatibility.yml"))
 end
 
-updated_at_file_name = File.join(UPDATED_AT_FOLDER, page_slug)
+updated_at_file_name = File.join(UPDATED_AT_FOLDER, file_slug)
 File.open(updated_at_file_name, "w") do |file|
   file.puts(Date.today)
 end
