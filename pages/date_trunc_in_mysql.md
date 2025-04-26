@@ -74,8 +74,8 @@ Using the `%Y` placeholder, here's how can we round up a timestamp to the year:
 
 ~~~pgsql
 SELECT DATE_FORMAT(timestamp_column_name, '%Y-01-01') FROM table_name
-{: .js-no-run-query-link }
 ~~~
+{: .js-no-run-query-link }
 
 This returns the first day of the year for the given date, like `2024-01-01`.
 
