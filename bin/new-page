@@ -8,6 +8,7 @@ require "active_support/core_ext/string/inflections"
 COMPATIBILITY_FOLDER = "compatibility"
 PAGES_FOLDER = "pages"
 UPDATED_AT_FOLDER = "updated_at"
+PROJECT_ROOT = File.expand_path("..", __dir__)
 
 def render_template(file_path, params)
   template_content = File.read(file_path)
@@ -24,16 +25,24 @@ end
 
 slug = ARGV[0]
 
+puts "Creating page for #{slug}"
+
 if slug.nil?
   puts %{⚠️\s\sPlease enter a page slug like "select" or "with_as".}
   return
 end
 
 page_slug = slug.gsub("_", "-").parameterize
-file_slug = slug.underscore
+file_slug = page_slug.underscore
 
-page_file_name = File.join(PAGES_FOLDER, "#{file_slug}.md")
-compatibility_file_name = File.join(COMPATIBILITY_FOLDER, "#{file_slug}.yml")
+puts "Page slug: #{page_slug}"
+puts "File slug: #{file_slug}"
+
+page_file_name = File.join(PROJECT_ROOT, PAGES_FOLDER, "#{file_slug}.md")
+compatibility_file_name = File.join(PROJECT_ROOT, COMPATIBILITY_FOLDER, "#{file_slug}.yml")
+
+puts "Page file name: #{page_file_name}"
+puts "Compatibility file name: #{compatibility_file_name}"
 
 if File.exist?(page_file_name) || File.exist?(compatibility_file_name)
   puts %{⚠️\s\sPage "#{file_slug}" already exists.}
@@ -41,16 +50,16 @@ if File.exist?(page_file_name) || File.exist?(compatibility_file_name)
 end
 
 File.open(page_file_name, "w") do |file|
-  file.puts(render_template("templates/page.md", {
+  file.puts(render_template(File.join(PROJECT_ROOT, "templates/page.md"), {
     page_slug: page_slug
   }))
 end
 
 File.open(compatibility_file_name, "w") do |file|
-  file.puts(File.read("templates/compatibility.yml"))
+  file.puts(File.read(File.join(PROJECT_ROOT, "templates/compatibility.yml")))
 end
 
-updated_at_file_name = File.join(UPDATED_AT_FOLDER, file_slug)
+updated_at_file_name = File.join(PROJECT_ROOT, UPDATED_AT_FOLDER, file_slug)
 File.open(updated_at_file_name, "w") do |file|
   file.puts(Date.today)
 end
