@@ -134,6 +134,7 @@ Here's the same query in BigQuery:
 SELECT SPLIT('foo@bar.com', '@')[SAFE_OFFSET(2)]
 --- The result is NULL
 ~~~
+{: .js-no-run-query-link}
 
 ## Quick Recap
 
