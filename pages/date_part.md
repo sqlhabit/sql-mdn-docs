@@ -14,6 +14,8 @@ see_also_pages:
     url: /mdn/how-to-emulate-date-part-function-in-mysql
   - name: How to emulate date_part() function in BigQuery
     url: /mdn/how-to-emulate-date-part-function-in-bigquery
+  - name: How to emulate date_part() function in SQLite
+    url: /mdn/how-to-emulate-date-part-function-in-sqlite
 ---
 
 The `date_part()` function in SQL is used to extract a specific part (such as year, month, day, hour, etc.) from a date or timestamp value. It's a very handy function when you need to break down timestamps into smaller components for analysis or reporting.

@@ -7,6 +7,9 @@ postgresql:
   min_version: 0
 sqlite:
   min_version:
+  related_pages:
+  - name: How to emulate date_part() function in SQLite
+    url: /mdn/how-to-emulate-date-part-function-in-sqlite
 redshift:
   min_version: 0
 big_query:
