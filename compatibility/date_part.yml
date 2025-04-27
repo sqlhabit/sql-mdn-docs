@@ -11,5 +11,8 @@ redshift:
   min_version: 0
 big_query:
   min_version:
+  related_pages:
+  - name: How to emulate date_part() function in BigQuery
+    url: /mdn/how-to-emulate-date-part-function-in-bigquery
 snowflake:
   min_version: 0

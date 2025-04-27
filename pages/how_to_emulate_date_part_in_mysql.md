@@ -12,6 +12,8 @@ see_also_pages:
     url: /mdn/date-part
   - name: date_trunc() function in SQL
     url: /mdn/date-trunc
+  - name: How to emulate date_part() function in BigQuery
+    url: /mdn/how-to-emulate-date-part-function-in-bigquery
 ---
 
 In PostgreSQL, the `date_part(part, source)` function lets you pull out specific parts of a date or timestamp, like the year, month, day, or even hour.
