@@ -1,5 +1,8 @@
 mysql:
   min_version:
+  related_pages:
+  - name: How to emulate date_part() function in MySQL
+    url: /mdn/how-to-emulate-date-part-function-in-mysql
 postgresql:
   min_version: 0
 sqlite:

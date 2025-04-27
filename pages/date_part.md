@@ -10,6 +10,8 @@ compatibility: true
 see_also_pages:
   - name: date_trunc() function in SQL
     url: /mdn/date-trunc
+  - name: How to emulate date_part() function in MySQL
+    url: /mdn/how-to-emulate-date-part-function-in-mysql
 ---
 
 The `date_part()` function in SQL is used to extract a specific part (such as year, month, day, hour, etc.) from a date or timestamp value. It's a very handy function when you need to break down timestamps into smaller components for analysis or reporting.
