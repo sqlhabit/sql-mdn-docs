@@ -30,7 +30,8 @@ A page file consists of 2 parts: [YAML](https://en.wikipedia.org/wiki/YAML) conf
 ---
 published_at: 2024-03-23 09:00
 slug: and
-type: operator
+types:
+  - operator
 name: AND
 title: AND operator in SQL
 description: AND is a logical operator in SQL that is used to combine multiple conditions, typically used inside a WHERE clause.
@@ -96,9 +97,9 @@ bin/new-page date_trunc
 
 Go over all config keys and assign them a value.
 
-#### Configure page type
+#### Configure page types
 
-Set a page type depending whether you're documenting an actual keyword (statement/clause/etc) or writing an explainer on how to use a keyword in another database (misc):
+Set page types depending whether you're documenting an actual keyword (statement/clause/etc) or writing an explainer on how to use a keyword in another database (misc):
 
 * **statement** (SELECT, INSERT, etc)
 * **clause** (FROM, WHERE, etc)
@@ -120,6 +121,15 @@ If you're writing a page for an SQL function, further specify the function data 
 * **function.json**
 * **function.null**
 * **function.conditional**
+
+The `type` param is an array since there're functions that support arguments of multiple types, like the [`to_char()` function]([/blob/main/pages/to_char.md](https://github.com/sqlhabit/sql-mdn-docs/blob/main/pages/to_char.md)):
+
+```yaml
+types:
+  - function.timestamp
+  - function.date
+  - function.numeric
+```
 
 #### Set SEO meta tags
 
@@ -176,7 +186,7 @@ By default, all queries are meant for the Bindle dataset, since it's the main da
 SELECT *
 FROM transactions
 ~~~
-{: data-dataset-id="3"}
+**{: data-dataset-id="3"}**
 ```
 
 ### How to disable "Run query" link

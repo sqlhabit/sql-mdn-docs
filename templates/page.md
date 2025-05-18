@@ -1,7 +1,8 @@
 ---
 published_at:
 slug: <%= page_slug %>
-type: "%KEYWORD_TYPE%"
+types:
+  - "%KEYWORD_TYPE%"
 name: <%= page_slug.upcase %>
 title: <%= page_slug.upcase %> in SQL
 description: SQL %KEYWORD% - %KEYWORD_DESCRIPTION%
