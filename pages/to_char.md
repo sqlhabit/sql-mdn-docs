@@ -102,6 +102,8 @@ Here's a list of all formatting tokens available to you for formatting dates and
 | `AM` or `PM` | Meridian indicator (uppercase) | AM, PM |
 | `am` or `pm` | Meridian indicator (lowercase) | am, pm |
 | `TZ` | Timezone abbreviation | PST, EST |
+| `TZH` | Timezone hour offset | -08, +05 |
+| `TZM` | Timezone minute offset | 00, 30 |
 
 Let's try to use as many of them to illustrate how to format time values:
 
@@ -189,6 +191,8 @@ These examples demonstrate how to:
 - Convert numbers to ordinal format or Roman numerals
 - Create complex custom formats with text and numbers combined
 - Format financial data in accounting style
+
+## Summary
 
 As you can see, the `to_char()` function is a powerhouse! It can format both dates and numbers, ensuring that your SQL queries can produce output strings that are precise and human-friendly.
 
