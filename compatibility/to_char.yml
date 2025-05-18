@@ -1,6 +1,9 @@
 ---
 mysql:
   min_version:
+  related_pages:
+    - name: How to emulate to_char() function in MySQL
+      url: /mdn/how-to-emulate-to-char-function-in-mysql
 postgresql:
   min_version: 0
 sqlite:
@@ -9,5 +12,8 @@ redshift:
   min_version: 0
 big_query:
   min_version:
+  related_pages:
+    - name: How to emulate to_char() function in BigQuery
+      url: /mdn/how-to-emulate-to-char-function-in-bigquery
 snowflake:
   min_version: 0

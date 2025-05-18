@@ -10,6 +10,8 @@ compatibility: false
 see_also_pages:
   - name: to_char() function in SQL
     url: /mdn/to-char
+  - name: How to emulate to_char() function in BigQuery
+    url: /mdn/how-to-emulate-to-char-function-in-bigquery
 ---
 
 The [`to_char()` function](/mdn/to-char) is super flexible: it lets you format both **dates** and **numbers** into human-friendly strings. It looks something like this:
@@ -26,12 +28,12 @@ SELECT to_char(price, 'FM999,999,999.00')
 FROM products
 ~~~
 
-Unfortunately, MySQL doesn’t support the `to_char()` function. But don’t worry — we can get pretty close using two different functions:
+Unfortunately, MySQL doesn't support the `to_char()` function. But don't worry — we can get pretty close using two different functions:
 
 * `DATE_FORMAT()` for dates
 * `FORMAT()` for numbers
 
-Let’s break them down!
+Let's break them down!
 
 ## Emulating to_char() for dates
 
@@ -49,7 +51,7 @@ FROM your_table
 
 ### Standard example
 
-Let’s take a query that uses `to_char()` function:
+Let's take a query that uses `to_char()` function:
 
 ~~~pgsql
 SELECT to_char(created_at, 'YYYY-MM-DD HH24:MI:SS')
@@ -64,7 +66,7 @@ FROM users
 ~~~
 {: .js-no-run-query-link}
 
-Here’s a quick list of the most common MySQL format tokens:
+Here's a quick list of the most common MySQL format tokens:
 
 | to_char() tokens   | MySQL date_format() tokens    | Meaning               |
 |-------------|-----------|------------------------|
@@ -129,7 +131,7 @@ FROM products
 
 ## Summary
 
-Unfortunately, MySQL doesn’t have the mighty `to_char()` function. You can somewhat similar functionality using:
+Unfortunately, MySQL doesn't have the mighty `to_char()` function. You can somewhat similar functionality using:
 
 * `DATE_FORMAT()` for formatting dates
 * `FORMAT()` for formatting numbers

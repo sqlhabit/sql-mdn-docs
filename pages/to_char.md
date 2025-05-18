@@ -8,6 +8,10 @@ description: The to_char() function in SQL is used to convert a number or date t
 keywords: SQL, to_char, function, text function, date formatting
 compatibility: true
 see_also_pages:
+  - name: How to emulate to_char() function in BigQuery
+    url: /mdn/how-to-emulate-to-char-function-in-bigquery
+  - name: How to emulate to_char() function in MySQL
+    url: /mdn/how-to-emulate-to-char-function-in-mysql
 ---
 
 The `to_char()` function in SQL is a versatile tool used to convert a number or a timestamp into a string based on a specified format. This function is exceptionally useful for presenting data in a more readable or expected format, facilitating easier interpretation and reporting.
