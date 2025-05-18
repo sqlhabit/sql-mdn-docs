@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-21 21:30
 slug: common-table-expressions-in-mysql
-type: misc
+types:
+  - misc
 name: Common Table Expressions (CTEs) in MySQL
 title: Common Table Expressions (CTEs) in MySQL
 description: What to use instead of CTE-s in MySQL

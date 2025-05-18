@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-23 09:00
 slug: and
-type: operator
+types:
+  - operator
 name: AND
 title: AND operator in SQL
 description: AND is a logical operator in SQL that is used to combine multiple conditions, typically used inside a WHERE clause.

@@ -1,7 +1,8 @@
 ---
 published_at: 2024-10-30 18:30
 slug: current-timestamp
-type: function.timestamp
+types:
+  - function.timestamp
 name: current_timestamp
 title: current_timestamp function in SQL
 description: SQL current_timestamp function allows to get the current time.

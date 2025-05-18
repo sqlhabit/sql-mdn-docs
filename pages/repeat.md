@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-12 07:30
 slug: repeat
-type: function.text
+types:
+  - function.text
 name: repeat
 title: repeat() function in SQL
 description: The repeat() function is used to repeat a string a specified number of times.

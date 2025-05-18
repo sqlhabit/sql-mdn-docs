@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-02 21:50
 slug: date-trunc-in-bigquery
-type: misc
+types:
+  - misc
 name: How to use date_trunc() function in BigQuery
 title: How to use date_trunc() function in BigQuery
 description: In this article, you'll learn how to use date_trunc() SQL function in BigQuery and truncate dates and timestamp to a specific precision.

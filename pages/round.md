@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-06 16:00
 slug: round
-type: function.numeric
+types:
+  - function.numeric
 name: round
 title: round() function in SQL
 description: The round() function rounds a number to the closest higher integer.

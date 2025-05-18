@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-07 11:00
 slug: max
-type: function.aggregate
+types:
+  - function.aggregate
 name: MAX
 title: Aggregate function MAX() in SQL
 description: The `MAX()` function in SQL is an aggregate function that returns the largest value in a selected column.

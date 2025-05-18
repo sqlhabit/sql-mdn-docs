@@ -1,7 +1,10 @@
 ---
 published_at: 2025-05-18 13:30
 slug: to-char
-type: function.timestamp
+types:
+  - function.timestamp
+  - function.date
+  - function.numeric
 name: to_char
 title: to_char() function in SQL
 description: The to_char() function in SQL is used to convert a number or date to a string in a specified format.

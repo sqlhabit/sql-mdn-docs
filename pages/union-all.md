@@ -1,7 +1,8 @@
 ---
 published_at: 2024-02-11 11:30
 slug: union-all
-type: operator
+types:
+  - operator
 name: UNION ALL
 title: UNION ALL operator in SQL
 description: The UNION ALL operator in SQL is used to combine the result sets of two or more queries into a single result set.

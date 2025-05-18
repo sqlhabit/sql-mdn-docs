@@ -1,7 +1,8 @@
 ---
 published_at: 2024-10-31 11:30
 slug: random
-type: function.numeric
+types:
+  - function.numeric
 name: random
 title: random() function in SQL
 description: The random() function in SQL is used to generate a random floating-point number between 0 and 1.

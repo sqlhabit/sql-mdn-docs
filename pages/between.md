@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-07 12:00
 slug: between
-type: operator
+types:
+  - operator
 name: BETWEEN
 title: BETWEEN operator in SQL
 description: The BETWEEN operator in SQL is used to filter data within a specific range.

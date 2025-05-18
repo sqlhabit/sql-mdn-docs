@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-11 21:45
 slug: reverse
-type: function.text
+types:
+  - function.text
 name: reverse
 title: reverse() function in SQL
 description: The reverse() function in SQL is used to reverse a string or a text value.

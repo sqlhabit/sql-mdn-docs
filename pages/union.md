@@ -1,7 +1,8 @@
 ---
 published_at: 2024-02-11 11:30
 slug: union
-type: operator
+types:
+  - operator
 name: UNION
 title: UNION operator in SQL
 description: The UNION operator in SQL is used to combine the result sets of two or more queries into a single result set filtering out duplicates.

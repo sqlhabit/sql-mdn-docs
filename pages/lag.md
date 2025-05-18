@@ -1,7 +1,8 @@
 ---
 published_at: 2024-11-07 21:30
 slug: lag
-type: function.window
+types:
+  - function.window
 name: LAG
 title: LAG() window function in SQL
 description: The LAG() window function in SQL is used to access the value from a previous row in the same result set, based on a specific ordering.

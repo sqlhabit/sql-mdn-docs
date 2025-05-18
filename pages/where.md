@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-28 21:10
 slug: where
-type: clause
+types:
+  - clause
 name: WHERE
 title: WHERE clause in SQL
 description: WHERE clause in SQL is used to specify conditions for filtering data.

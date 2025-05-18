@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-02 21:30
 slug: date-trunc-in-mysql
-type: misc
+types:
+  - misc
 name: How to emulate date_trunc() function in MySQL
 title: How to emulate date_trunc() function in MySQL
 description: In this article, you'll learn how to emulate date_trunc() SQL function in MySQL and truncate dates and timestamp to a specific precision.
@@ -68,7 +69,7 @@ The `DATE_FORMAT(timestamp, format)` function accepts a `format` string argument
 | %Y | Year, numeric, four digits |
 | %y | Year, numeric (two digits) |
 | %% | A literal % character |
-| %x | x, for any “x” not listed above |
+| %x | x, for any "x" not listed above |
 
 Using the `%Y` placeholder, here's how can we round up a timestamp to the year:
 

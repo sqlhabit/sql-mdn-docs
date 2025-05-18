@@ -1,7 +1,8 @@
 ---
 published_at: 2025-04-26 22:00
 slug: date-part
-type: function.timestamp
+types:
+  - function.timestamp
 name: date_part
 title: date_part() function in SQL
 description: SQL date_part() function allows to extract a specific part (year, month, day, hour, etc.) from a timestamp or date.

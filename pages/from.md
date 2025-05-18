@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-26 20:15
 slug: from
-type: keyword
+types:
+  - keyword
 name: FROM
 title: FROM keyword in SQL
 description: FROM keyword in SQL is used to specify the source table(s) from which to retrieve data.

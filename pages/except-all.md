@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-11 21:30
 slug: except-all
-type: operator
+types:
+  - operator
 name: EXCEPT ALL
 title: EXCEPT ALL operator in SQL
 description: The EXCEPT ALL operator in SQL is used to return all rows from the first query that are not present in the result set of the second query without deduplication.

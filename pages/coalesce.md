@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-07 20:45
 slug: coalesce
-type: function.conditional
+types:
+  - function.conditional
 name: COALESCE
 title: COALESCE() function in SQL
 description: The COALESCE() function in SQL is conditional function that allows you to return the first non-NULL value in a list of arguments.

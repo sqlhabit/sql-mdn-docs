@@ -1,7 +1,8 @@
 ---
 published_at: 2024-11-01 10:40
 slug: sum-window-function
-type: function.window
+types:
+  - function.window
 name: SUM
 title: SUM() window function in SQL
 description: The SUM() window function in SQL is used to calculate cumulative totals over a set of rows.

@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-30 12:10
 slug: in
-type: operator
+types:
+  - operator
 name: IN
 title: IN operator in SQL
 description: IN operator in SQL

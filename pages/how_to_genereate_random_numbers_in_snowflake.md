@@ -1,7 +1,8 @@
 ---
 published_at: 2024-11-01 12:00
 slug: how-to-genereate-random-numbers-in-snowflake
-type: misc
+types:
+  - misc
 name: How to generate random numbers in Snowflake
 title: How to generate random numbers in Snowflake
 description: Learn how to generate random numbers and work with randomness in Snowflake.

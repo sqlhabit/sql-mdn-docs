@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-11 21:30
 slug: except
-type: operator
+types:
+  - operator
 name: EXCEPT
 title: EXCEPT operator in SQL
 description: The EXCEPT operator in SQL is used to return unique rows from the first query that are not present in the result set of the second query.

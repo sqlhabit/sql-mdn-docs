@@ -1,7 +1,8 @@
 ---
 published_at: 2025-05-18 14:30
 slug: how-to-emulate-to-char-function-in-bigquery
-type: misc
+types:
+  - misc
 name: How to emulate to_char() function in BigQuery
 title: How to emulate to_char() function in BigQuery
 description: Learn how to format dates and numbers in BigQuery just like PostgreSQL's to_char() function using FORMAT_TIMESTAMP(), FORMAT_DATE(), and FORMAT().

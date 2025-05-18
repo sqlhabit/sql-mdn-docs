@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-13 08:20
 slug: lpad
-type: function.text
+types:
+  - function.text
 name: lpad
 title: lpad() function in SQL
 description: The lpad() function in SQL is used to pad a string with another string to a specified total length from the left side.

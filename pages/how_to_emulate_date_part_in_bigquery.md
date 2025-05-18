@@ -1,7 +1,8 @@
 ---
 published_at: 2025-04-27 16:00
 slug: how-to-emulate-date-part-function-in-bigquery
-type: misc
+types:
+  - misc
 name: How to emulate date_part() function in BigQuery
 title: How to emulate date_part() function in BigQuery
 description: Learn how to extract parts of a date or timestamp in BigQuery using EXTRACT().

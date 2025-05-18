@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-29 09:15
 slug: group-by
-type: clause
+types:
+  - clause
 name: GROUP BY
 title: GROUP BY clause in SQL
 description: GROUP BY clause in SQL is used for grouping records and calculating aggregate values for these groups (COUNT, SUM, etc).

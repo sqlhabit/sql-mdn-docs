@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-07 10:45
 slug: min
-type: function.aggregate
+types:
+  - function.aggregate
 name: MIN
 title: Aggregate function MIN() in SQL
 description: The `MIN()` function in SQL is an aggregate function that returns the smallest value in a selected column.

@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-11 21:35
 slug: length
-type: function.text
+types:
+  - function.text
 name: length
 title: length() function in SQL
 description: The length() function in SQL is used to measure the number of characters in a string.

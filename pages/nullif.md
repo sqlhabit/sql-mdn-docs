@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-11 08:30
 slug: nullif
-type: function.conditional
+types:
+  - function.conditional
 name: NULLIF
 title: NULLIF() function in SQL
 description: The NULLIF function in SQL is a conditional expression that returns NULL if two expressions are equal.

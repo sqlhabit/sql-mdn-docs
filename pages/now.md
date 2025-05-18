@@ -1,7 +1,8 @@
 ---
 published_at: 2024-10-30 17:00
 slug: now
-type: function.timestamp
+types:
+  - function.timestamp
 name: now
 title: now() function in SQL
 description: SQL now() function allows to get the current time.

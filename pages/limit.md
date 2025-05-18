@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-28 21:30
 slug: limit
-type: clause
+types:
+  - clause
 name: LIMIT
 title: LIMIT clause in SQL
 description: LIMIT clause in SQL specifies how many records should be in the result set.

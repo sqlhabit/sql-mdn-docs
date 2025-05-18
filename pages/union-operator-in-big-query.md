@@ -1,7 +1,8 @@
 ---
 published_at: 2024-02-11 11:30
 slug: union-operator-in-big-query
-type: misc
+types:
+  - misc
 name: UNION operator in BigQuery
 title: UNION operator in BigQuery
 description: Learn how to use combine result sets in BigQuery with UNION and UNION ALL operators.

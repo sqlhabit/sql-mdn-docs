@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-11 08:00
 slug: replace
-type: function.text
+types:
+  - function.text
 name: replace
 title: replace() function in SQL
 description: The replace() function is used to replace a substring in a string.

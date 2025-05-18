@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-02 21:00
 slug: date-trunc-in-sqlite
-type: misc
+types:
+  - misc
 name: How to emulate date_trunc() function in SQLite
 title: How to emulate date_trunc() function in SQLite
 description: In this article, you'll learn how to emulate date_trunc() SQL function in SQLite and round up dates and timestamp to a specific precision.

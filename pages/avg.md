@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-07 11:15
 slug: avg
-type: function.aggregate
+types:
+  - function.aggregate
 name: AVG
 title: Aggregate function AVG() in SQL
 description: The `AVG()` function in SQL is an aggregate function that returns the average value from a selected column.

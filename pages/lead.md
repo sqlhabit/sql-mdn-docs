@@ -1,7 +1,8 @@
 ---
 published_at: 2024-11-07 21:30
 slug: lead
-type: function.window
+types:
+  - function.window
 name: LEAD
 title: LEAD() window function in SQL
 description: The LEAD() window function in SQL is used to access the value from the following row in the same result set, based on a specific ordering.

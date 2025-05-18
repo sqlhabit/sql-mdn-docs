@@ -1,7 +1,8 @@
 ---
 published_at: 2024-11-01 12:00
 slug: how-to-genereate-random-numbers-in-sqlite
-type: misc
+types:
+  - misc
 name: How to generate random numbers in SQLite
 title: How to generate random numbers in SQLite
 description: Learn how to generate random numbers and work with randomness in SQLite.

@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-07 16:00
 slug: left-join
-type: clause
+types:
+  - clause
 name: LEFT JOIN
 title: LEFT JOIN in SQL
 description: LEFT JOIN clause in SQL is used to combine rows from two or more tables, based on a relation between them.

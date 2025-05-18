@@ -1,7 +1,8 @@
 ---
 published_at: 2025-04-26 19:15
 slug: how-to-emulate-date-part-function-in-mysql
-type: misc
+types:
+  - misc
 name: How to emulate date_part() function in MySQL
 title: How to emulate date_part() function in MySQL
 description: Learn how to extract parts of dates in MySQL using the EXTRACT() function.

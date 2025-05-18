@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-06 16:20
 slug: floor
-type: function.numeric
+types:
+  - function.numeric
 name: floor
 title: floor() function in SQL
 description: The floor() function rounds a number to the closest lower integer.

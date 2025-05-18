@@ -1,7 +1,8 @@
 ---
 published_at: 2025-05-18 14:00
 slug: how-to-emulate-to-char-function-in-mysql
-type: misc
+types:
+  - misc
 name: How to emulate to_char() function in MySQL
 title: How to emulate to_char() function in MySQL
 description: Learn how to emulate the to_char() formatting function from in MySQL using DATE_FORMAT() and FORMAT().

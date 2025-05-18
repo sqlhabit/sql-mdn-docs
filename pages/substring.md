@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-10 22:30
 slug: substring
-type: function.text
+types:
+  - function.text
 name: substring
 title: substring() function in SQL
 description: The substring() function is used to extract a substring from a string.

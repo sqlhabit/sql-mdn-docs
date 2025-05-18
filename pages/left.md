@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-13 07:40
 slug: left
-type: function.text
+types:
+  - function.text
 name: left
 title: left() function in SQL
 description: The left() function in SQL is used to extract a specified number of characters from the beginning of a string.

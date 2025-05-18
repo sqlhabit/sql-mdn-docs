@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-11 09:30
 slug: intersect
-type: operator
+types:
+  - operator
 name: INTERSECT
 title: INTERSECT operator in SQL
 description: The INTERSECT operator in SQL is used to return the common records from two or more SELECT queries.

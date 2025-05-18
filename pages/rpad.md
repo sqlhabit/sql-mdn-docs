@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-13 08:35
 slug: rpad
-type: function.text
+types:
+  - function.text
 name: rpad
 title: rpad() function in SQL
 description: The rpad() function in SQL is used to pad a string with another string to a specified total length from the right side.

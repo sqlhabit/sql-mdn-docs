@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-07 15:40
 slug: inner-join
-type: clause
+types:
+  - clause
 name: INNER JOIN
 title: INNER JOIN in SQL
 description: INNER JOIN clause in SQL is used to combine rows from two or more tables, based on a relation between them.

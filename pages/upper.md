@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-11 21:25
 slug: upper
-type: function.text
+types:
+  - function.text
 name: upper
 title: upper() function in SQL
 description: The upper() function in SQL is used to convert all letters in a specified string to uppercase.

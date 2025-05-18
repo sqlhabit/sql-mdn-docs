@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-30 11:45
 slug: like
-type: operator
+types:
+  - operator
 name: LIKE
 title: LIKE operator in SQL
 description: LIKE operator in SQL is used to filter data based on specific text patterns.

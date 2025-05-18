@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-29 09:45
 slug: count
-type: function.aggregate
+types:
+  - function.aggregate
 name: COUNT
 title: Aggregate function COUNT() in SQL
 description: Aggregate function COUNT() in SQL is used to count records.

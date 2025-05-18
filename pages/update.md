@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-30 09:45
 slug: update
-type: statement
+types:
+  - statement
 name: UPDATE
 title: UPDATE statement in SQL
 description: UPDATE statement in SQL is used to modify records in a table.

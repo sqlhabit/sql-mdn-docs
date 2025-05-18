@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-30 10:10
 slug: delete
-type: statement
+types:
+  - statement
 name: DELETE
 title: DELETE statement in SQL
 description: DELETE statement in SQL is used to remove rows from a table based on a specific condition.

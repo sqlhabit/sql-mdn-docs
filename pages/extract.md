@@ -1,7 +1,8 @@
 ---
 published_at: 2025-04-27 14:30
 slug: extract
-type: function.timestamp
+types:
+  - function.timestamp
 name: extract
 title: extract() function in SQL
 description: SQL extract() function allows to retrieve specific parts (like year, month, day, etc.) from date or timestamp values.

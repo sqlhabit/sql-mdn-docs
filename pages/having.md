@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-08 19:30
 slug: having
-type: clause
+types:
+  - clause
 name: HAVING
 title: HAVING clause in SQL
 description: The HAVING clause in SQL is used together with the GROUP BY clause to filter groups based on aggregation results.

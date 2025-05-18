@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-23 12:00
 slug: case
-type: operator
+types:
+  - operator
 name: CASE
 title: CASE operator in SQL
 description: CASE operator in SQL is used for a if-then-else control flow.

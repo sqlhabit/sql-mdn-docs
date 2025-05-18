@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-28 22:00
 slug: order-by
-type: clause
+types:
+  - clause
 name: ORDER BY
 title: ORDER BY clause in SQL
 description: ORDER BY clause in SQL defines the order of records in the result set.

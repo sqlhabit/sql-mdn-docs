@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-07 11:30
 slug: concat
-type: function.text
+types:
+  - function.text
 name: concat
 title: concat() function in SQL
 description: The concat() function concatenates multiple text values into one.

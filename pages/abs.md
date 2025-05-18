@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-22 19:45
 slug: abs
-type: function.numeric
+types:
+  - function.numeric
 name: abs
 title: abs() function in SQL
 description: The abs() function returns the absolute value of a given number.

@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-30 11:30
 slug: insert
-type: statement
+types:
+  - statement
 name: INSERT
 title: INSERT statement in SQL
 description: INSERT statement in SQL is used to add new rows to a table.

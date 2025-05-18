@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-13 08:05
 slug: right
-type: function.text
+types:
+  - function.text
 name: right
 title: right() function in SQL
 description: The right() function in SQL is used to extract a specified number of characters from the end of a string.

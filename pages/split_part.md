@@ -1,7 +1,8 @@
 ---
 published_at: 2025-04-22 17:45
 slug: split-part
-type: function.text
+types:
+  - function.text
 name: split_part
 title: split_part() function in SQL
 description: The split_part() function is used to extract a specific part of a string that has been divided into segments based on a given delimiter.

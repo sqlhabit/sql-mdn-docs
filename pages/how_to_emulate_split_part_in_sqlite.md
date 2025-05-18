@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-25 21:30
 slug: how-to-emulate-split-part-function-in-sqlite
-type: misc
+types:
+  - misc
 name: How to emulate split_part() function in SQLite
 title: How to emulate split_part() function in SQLite
 description: Learn how to split text in SQLite using a recursive CTE.

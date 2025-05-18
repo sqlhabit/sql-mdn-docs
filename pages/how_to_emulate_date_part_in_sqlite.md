@@ -1,7 +1,8 @@
 ---
 published_at: 2025-04-27 18:00
 slug: how-to-emulate-date-part-function-in-sqlite
-type: misc
+types:
+  - misc
 name: How to emulate date_part() function in SQLite
 title: How to emulate date_part() function in SQLite
 description: Learn how to extract parts of a date like year, month, or day in SQLite, similar to the date_part() function in PostgreSQL.

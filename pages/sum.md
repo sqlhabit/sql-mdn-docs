@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-30 12:45
 slug: sum
-type: function.aggregate
+types:
+  - function.aggregate
 name: SUM
 title: Aggregate function SUM() in SQL
 description: SUM() is an aggregate function in SQL that calculates the total sum of a numeric column.

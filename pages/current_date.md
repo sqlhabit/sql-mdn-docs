@@ -1,7 +1,8 @@
 ---
 published_at: 2024-11-01 15:30
 slug: current-date
-type: function.date
+types:
+  - function.date
 name: current_date
 title: current_date function in SQL
 description: SQL current_date function allows to get today's date.

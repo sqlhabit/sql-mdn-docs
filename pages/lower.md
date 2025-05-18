@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-11 21:15
 slug: lower
-type: function.text
+types:
+  - function.text
 name: lower
 title: lower() function in SQL
 description: The lower() function in SQL is used to convert all letters in a specified string to lowercase.

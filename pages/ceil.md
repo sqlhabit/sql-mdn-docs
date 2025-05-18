@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-06 16:35
 slug: ceil
-type: function.numeric
+types:
+  - function.numeric
 name: ceil
 title: ceil() function in SQL
 description: The ceil() function rounds a number to the closest higher integer.

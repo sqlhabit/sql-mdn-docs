@@ -1,7 +1,8 @@
 ---
 published_at: 2024-02-09 21:53
 slug: select
-type: statement
+types:
+  - statement
 name: SELECT
 title: SELECT statement in SQL
 description: SQL SELECT - SELECT statement is used to fetch the data from a database table. SELECT statement returns a table that's also called a result set.

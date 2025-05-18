@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-29 09:30
 slug: is
-type: operator
+types:
+  - operator
 name: IS
 title: IS operator in SQL
 description: IS operator in SQL is a logical operator for comparison values with TRUE/FALSE or NULL.

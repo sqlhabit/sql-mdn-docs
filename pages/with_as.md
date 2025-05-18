@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-19 20:30
 slug: with-as
-type: clause
+types:
+  - clause
 name: WITH .. AS
 title: WITH..AS clause in SQL
 description: SQL WITH .. AS clause or Common Table Expression is used to define temporary queries (subqueries).

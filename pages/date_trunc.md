@@ -1,7 +1,8 @@
 ---
 published_at: 2024-03-31 22:00
 slug: date-trunc
-type: function.timestamp
+types:
+  - function.timestamp
 name: date_trunc
 title: date_trunc() function in SQL
 description: SQL date_trunc() function allows to extract a specific part of a timestamp (year, month, day, hour, etc).

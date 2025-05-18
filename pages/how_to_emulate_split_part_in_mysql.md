@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-25 17:30
 slug: how-to-emulate-split-part-function-in-mysql
-type: misc
+types:
+  - misc
 name: How to emulate split_part() function in MySQL
 title: How to emulate split_part() function in MySQL
 description: Learn how to split text in MySQL using the SUBSTRING_INDEX() function.

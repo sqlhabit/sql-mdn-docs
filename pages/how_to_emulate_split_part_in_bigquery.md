@@ -1,7 +1,8 @@
 ---
 published_at: 2024-04-26 17:45
 slug: how-to-emulate-split-part-function-in-bigquery
-type: misc
+types:
+  - misc
 name: How to emulate split_part() function in BigQuery
 title: How to emulate split_part() function in BigQuery
 description: Learn how to split text in BigQuery using the SUBSTRING_INDEX() function.
